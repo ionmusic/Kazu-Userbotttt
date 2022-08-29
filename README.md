@@ -1,4 +1,4 @@
- <h1 align="center">💥 𝗡𝗮𝗻𝗱𝗲 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯 💥</h1>
+ <h1 align="center">💥 Uᴘᴜᴛᴛ U𝚂ᴇʀʙᴏᴛ 💥</h1>
 
 <a href="https://github.com/sip-Userbot/Nande-Telethon/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/AyiinXd/Ayiin-Userbot)
@@ -9,10 +9,10 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/3770e59b11a06a85d37b7.jpg">
+  <img src="https://telegra.ph/file/0ad4340e83e612e14352b.jpg">
 </p>
 
-👩‍💻 𝗡𝗮𝗻𝗱𝗲-𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯 adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+👩‍💻 Uᴘᴜᴛᴛ U𝚂ᴇʀʙᴏᴛ adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
@@ -85,7 +85,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 ## Updates & Support
 
-Follow Channel [@suportNande](https://t.me/suportsipuserbot) untuk info Update bot dan Gabung Group [@suportsipuserbot](https://t.me/suportsipuserbot) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Nande-Telethon.
+Follow Channel [@ohgitunih](https://t.me/Uputtsupport) untuk info Update bot dan Gabung Group [@suportsipuserbot](https://t.me/suportsipuserbot) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Nande-Telethon.
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/Man-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [AdekMaulana](https://github.com/adekmaulana) : ProjectBish
