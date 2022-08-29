@@ -108,9 +108,7 @@ while 0 < 6:
             1663258664,
             2062364017,
             2076219735,
-            5591786563,
-            1663657124,
-            1939405190,
+            1841642016,
         ]
         break
     DEVS = _DEVS.json()
@@ -232,17 +230,17 @@ BOT_VER = os.environ.get("BOT_VER", "3.6.9")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/3770e59b11a06a85d37b7.jpg")
+              or "https://telegra.ph/file/da9ca8702830b1621bd4b.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/9cefe256c1b71bb48cafd.jpg")
+              or "https://telegra.ph/file/da9ca8702830b1621bd4b.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
             or ".png")
 
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
-             or "https://telegra.ph/file/58e87a4527649af555a6a.png")
+             or "https://telegra.ph/file/da9ca8702830b1621bd4b.png")
 
 DEFAULT = list(map(int, b64decode("MjA2MjM2NDAxNw==").split()))
 
