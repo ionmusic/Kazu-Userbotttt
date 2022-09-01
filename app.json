@@ -11,11 +11,11 @@
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan API Hash di Grup » https://t.me/suportsipuserbot » Lalu ketik /get api atau di web my.telegram.org",
+      "description": "Dapatkan API Hash di Grup » https://t.me/uputtsupport » Lalu ketik /get api atau di web my.telegram.org",
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/suportsipuserbot » Lalu ketik /get string",
+      "description": "Dapatkan String Session di Grup » https://t.me/uputtsupport » Lalu ketik /get string",
       "required": true
     },
     "HEROKU_APP_NAME": {
