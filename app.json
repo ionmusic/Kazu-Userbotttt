@@ -1,9 +1,9 @@
 {
-  "name": "𝗡𝗮𝗻𝗱𝗲-𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯",
-  "description": "[𝗡𝗮𝗻𝗱𝗲-𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯] Selamat pakai, Gunakan dengan bijak",
+  "name": "uput-userbot",
+  "description": "[uput-userbot] Selamat pakai, Luh songong gw takol",
   "logo": "https://telegra.ph/file/17dbf290bbadaf6290806.jpg",
-  "keywords": ["telegram", "userbot", "𝗡𝗮𝗻𝗱𝗲-𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯", "modular", "python"],
-  "repository": "https://github.com/sip-Userbot/Nande-Telethon",
+  "keywords": ["telegram", "userbot", "uput-userbot ", "modular", "python"],
+  "repository": "https://github.com/iamuput/Uputt-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
