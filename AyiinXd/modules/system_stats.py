@@ -110,7 +110,7 @@ async def psu(event):
     help_string += f"**Pʏᴛʜᴏɴ :** `{sys.version}`\n"
     help_string += f"**Tᴇʟᴇᴛʜᴏɴ :**`{__version__}`\n"
     help_string += f"**Pʏ-Aʏɪɪɴ :** `{py_ver}`\n"
-    help_string += f"**𝗡𝗮𝗻𝗱𝗲 Vᴇʀsɪᴏɴ :** `{ayiin_version} [{HOSTED_ON}]`"
+    help_string += f"**uputt Vᴇʀsɪᴏɴ :** `{ayiin_version} [{HOSTED_ON}]`"
     await edit_or_reply(event, help_string)
 
 
@@ -187,7 +187,7 @@ async def amireallyalive(alive):
     await alive.edit("🎈")
     await asyncio.sleep(3)
     output = (
-        f"**Tʜᴇ [𝗡𝗮𝗻𝗱𝗲 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯](https://github.com/iamuput/Uputt-Userbot)**\n\n"
+        f"**Tʜᴇ [uputt 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯](https://github.com/iamuput/Uputt-Userbot)**\n\n"
         f"**{alive_text}**\n\n"
         f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
         f"{emoji} **Bᴀsᴇ Oɴ :** ••{adB.name}••\n"
@@ -198,7 +198,7 @@ async def amireallyalive(alive):
         f"{emoji} **PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ :** `{pytgcallss}` \n"
         f"{emoji} **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{version.__version__}` \n"
         f"{emoji} **Pʏ-Aʏɪɪɴ Vᴇʀsɪᴏɴ :** `{py_ver}`\n"
-        f"{emoji} **𝗡𝗮𝗻𝗱𝗲 Vᴇʀsɪᴏɴ :** `{ayiin_version}` [{HOSTED_ON}]\n"
+        f"{emoji} **uputt Vᴇʀsɪᴏɴ :** `{ayiin_version}` [{HOSTED_ON}]\n"
         f"{emoji} **Bᴏᴛ Uᴘᴛɪᴍᴇ :** `{uptime}`\n"
         "╰✠╼━━━━━━━━━━━━━━━✠╯\n\n"
     )
