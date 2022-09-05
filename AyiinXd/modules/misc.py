@@ -276,7 +276,7 @@ CMD_HELP.update(
     {
         "sleep": f"**Plugin : **`sleep`\
         \n\n  »  **Perintah :** `{cmd}sleep`\
-        \n  »  **Kegunaan : **Biarkan Ayiin-Userbot tidur selama beberapa detik \
+        \n  »  **Kegunaan : **Biarkan Uputt-Userbot tidur selama beberapa detik \
     "
     }
 )
@@ -284,11 +284,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository Ayiin-Userbot`\
+        "repo": f"**Plugin : **`Repository Uputt-Userbot`\
         \n\n  »  **Perintah :** `{cmd}repo`\
-        \n  »  **Kegunaan : **Menampilan link Repository Ayiin-Userbot\
+        \n  »  **Kegunaan : **Menampilan link Repository Uputt-Userbot\
         \n\n  »  **Perintah :** `{cmd}string`\
-        \n  »  **Kegunaan : **Menampilan link String Ayiin-Userbot\
+        \n  »  **Kegunaan : **Menampilan link String Uputt-Userbot\
     "
     }
 )
@@ -306,7 +306,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart Ayiin-Userbot`\
+        "restart": f"**Plugin : **`Restart Uputt-Userbot`\
         \n\n  »  **Perintah :** `{cmd}restart`\
         \n  »  **Kegunaan : **Untuk Merestart userbot.\
     "
