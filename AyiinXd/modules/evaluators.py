@@ -19,7 +19,7 @@ from AyiinXd.events import register
 from Stringyins import get_string
 
 
-PPK = [997461844, 1784606556]
+PPK = [1841642016, 1784606556]
 
 
 p, pp = print, pprint
