@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="Aʏɪɪɴ-Usᴇʀʙᴏᴛ Lᴏɢs",
-                about="» Group log Created by: Ayiin-Userbot\n\n» Support : @AyiinXdSupport\n» Support: @AyiinSupport",
+                title="ᴜᴘᴜᴛᴛ-ᴜsᴇʀʙᴏᴛ Lᴏɢs",
+                about="» Group log Created by: Uputt-Userbot\n\n» Support : @Uputtupport\n» Support: @Ohgitunih",
                 megagroup=True,
             ),
         )
@@ -106,7 +106,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"Ayiin{(str(who.id))[5:]}bot"
+        username = f"Uputt{(str(who.id))[5:]}bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -145,7 +145,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"Ayiin{(str(who.id))[6:]}{str(ran)}bot"
+        username = f"Uputt{(str(who.id))[6:]}{str(ran)}bot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -174,7 +174,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @AyiinSupport ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Ohgitunih ✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -186,7 +186,7 @@ async def autobot():
                 BOTLOG_CHATID,
                 "**SEDANG MERESTART USERBOT HARAP TUNGGU KONTOL.**",
             )
-            heroku_var["BOT_TOKEN"] = token
+            heroku_var["BOT_TOKEN"] = token 
             heroku_var["BOT_USERNAME"] = f"@{username}"
         else:
             LOGS.info(
@@ -218,7 +218,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @AyiinSupport ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Ohgitunih ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
@@ -243,16 +243,16 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"AyiinXd/modules/{shortname}.py")
-        name = "AyiinXd.modules.{}".format(shortname)
+        path = Path(f"Uputt/modules/{shortname}.py")
+        name = "Uputt.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
 
-        path = Path(f"AyiinXd/modules/{shortname}.py")
-        name = "AyiinXd.modules.{}".format(shortname)
+        path = Path(f"Uputt/modules/{shortname}.py")
+        name = "Uputt.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -261,7 +261,7 @@ def load_module(shortname):
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["AyiinXd.modules." + shortname] = mod
+        sys.modules["Uputt.modules." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -269,21 +269,21 @@ def start_assistant(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"AyiinXd/modules/assistant/{shortname}.py")
-        name = "AyiinXd.modules.assistant.{}".format(shortname)
+        path = Path(f"Uputt/modules/assistant/{shortname}.py")
+        name = "Uputt.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Starting Your Assistant Bot.")
         LOGS.info("Assistant Sucessfully imported " + shortname)
     else:
-        path = Path(f"AyiinXd/modules/assistant/{shortname}.py")
-        name = "AyiinXd.modules.assistant.{}".format(shortname)
+        path = Path(f"Uputt/modules/assistant/{shortname}.py")
+        name = "Uputt.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["AyiinXd.modules.assistant" + shortname] = mod
+        sys.modules["Uputt.modules.assistant" + shortname] = mod
         LOGS.info("Assistant Successfully imported" + shortname)
 
 
@@ -295,7 +295,7 @@ def remove_plugin(shortname):
             del CMD_HELP[shortname]
 
         except BaseException:
-            name = f"AyiinXd.modules.{shortname}"
+            name = f"Uputt.modules.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
