@@ -198,10 +198,10 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙐𝙥𝙪𝙩𝙩 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯")
+    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙐𝙥𝙪𝙩𝙩 𝘜𝘴𝘦𝘳𝘣𝘰𝘵")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "𝙐𝙥𝙪𝙩𝙩 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "𝙐𝙥𝙪𝙩𝙩 Userbot")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✩")
@@ -344,7 +344,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**𝙐𝙥𝙪𝙩𝙩 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯 v`{BOT_VER}` is back up and running!**\n\n"
+        f"**𝙐𝙥𝙪𝙩𝙩 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -548,7 +548,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ 𝙐𝙥𝙪𝙩𝙩 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**✨ 𝙐𝙥𝙪𝙩𝙩 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
@@ -576,7 +576,7 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Uputt - Telethon",
+                    description="Repository Uputt - 𝘜𝘴𝘦𝘳𝘣𝘰𝘵",
                     url="https://t.me/uputtsupport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
@@ -638,7 +638,7 @@ with bot:
                 buttons.append([custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
                 result = builder.article(
                     title="Lang",
-                    description="Lang Uputt - Telethon",
+                    description="Lang Uputt - Userbot",
                     url="https://t.me/uputtsupport",
                     thumb=InputWebDocument(
                         logoyins,
@@ -683,15 +683,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ 𝙐𝙥𝙪𝙩𝙩-𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯 ✨",
-                    description="Uputt - Telethon | Telethon",
+                    title="✨ 𝙐𝙥𝙪𝙩𝙩-Userbot ✨",
+                    description="Uputt - Userbot | Telethon",
                     url="https://t.me/uputtsupport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**𝙐𝙥𝙪𝙩𝙩-𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @uputtsupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**𝙐𝙥𝙪𝙩𝙩-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @uputtsupport\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -699,7 +699,7 @@ with bot:
                                 "https://t.me/uputtsupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/sip-Userbot/Uputt-Telethon"),
+                                "https://github.com/iamuput/Uputt-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -748,7 +748,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Ayiin-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ 𝙐𝙥𝙪𝙩𝙩-𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯 Inline Menu ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**✨ 𝙐𝙥𝙪𝙩𝙩-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 Inline Menu ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
