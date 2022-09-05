@@ -58,7 +58,7 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="ᴜᴘᴜᴛᴛ-ᴜsᴇʀʙᴏᴛ Lᴏɢs",
+                title="ᴜᴘᴜᴛᴛ-ᴜSᴇʀʙᴏᴛ Lᴏɢs",
                 about="» Group log Created by: Uputt-Userbot\n\n» Support : @Uputtupport\n» Support: @Ohgitunih",
                 megagroup=True,
             ),
