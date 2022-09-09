@@ -18,9 +18,9 @@ from AyiinXd.ayiin import ayiin_version as py_ver
 from AyiinXd.ayiin import HOSTED_ON, checking
 
 MSG_ON = """
-❏ Uputt - ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪғᴋᴀɴ
+❏ 𝚄ᴘᴜᴛᴛ - ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪғᴋᴀɴ
 ╭╼┅━━━━━╍━━━━━┅╾
-├▹ Uputt Vᴇʀsɪᴏɴ - {} •[{}]•
+├▹ 𝚄ᴘᴜᴛᴛ Vᴇʀsɪᴏɴ - {} •[{}]•
 ├▹ Usᴇʀʙᴏᴛ Vᴇʀsɪᴏɴ - {}
 ├▹ @{}
 ├▹ Kᴇᴛɪᴋ {}alive Uɴᴛᴜᴋ Mᴇɴɢᴇᴄᴇᴋ Bᴏᴛ
