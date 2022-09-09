@@ -8,7 +8,8 @@ RUN git clone -b Uputt-Userbot https://github.com/iamuput/Uputt-Userbot /home/up
     && chmod 777 /home/uputtuserbot \
     && mkdir /home/uputtuserbot/bin/
 
-COPY ./sample_config.env ./config.env* /home/nandetelethon/
+COPY ./sample_config.env ./config.env* /home/
+uputuserbot/
 
 WORKDIR /home/uputtuserbot/
 
