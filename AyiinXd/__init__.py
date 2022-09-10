@@ -744,7 +744,7 @@ with bot:
             )
         )
         async def gback_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Ayiin-Userbot
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Uputt-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
                     f"**✨ 𝙐𝙥𝙪𝙩𝙩-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 Inline Menu ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
