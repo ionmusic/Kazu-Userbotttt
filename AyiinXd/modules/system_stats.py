@@ -187,7 +187,7 @@ async def amireallyalive(alive):
     await alive.edit("🎈")
     await asyncio.sleep(3)
     output = (
-        f"**Tʜᴇ [uputt 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯](https://github.com/iamuput/Uputt-Userbot)**\n\n"
+        f"**Tʜᴇ [Uᴘᴜᴛᴛ 𝘛𝘦𝘭𝘦𝘵𝘩𝘰𝘯](https://github.com/iamuput/Uputt-Userbot)**\n\n"
         f"**{alive_text}**\n\n"
         f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
         f"{emoji} **Bᴀsᴇ Oɴ :** ••{adB.name}••\n"
@@ -197,8 +197,8 @@ async def amireallyalive(alive):
         f"{emoji} **Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{python_version()}` \n"
         f"{emoji} **PʏTɢCᴀʟʟs Vᴇʀsɪᴏɴ :** `{pytgcallss}` \n"
         f"{emoji} **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{version.__version__}` \n"
-        f"{emoji} **Pʏ-uputt Vᴇʀsɪᴏɴ :** `{py_ver}`\n"
-        f"{emoji} **uputt Vᴇʀsɪᴏɴ :** `{ayiin_version}` [{HOSTED_ON}]\n"
+        f"{emoji} **Pʏ-Uᴘᴜᴛᴛ Vᴇʀsɪᴏɴ :** `{py_ver}`\n"
+        f"{emoji} **Uᴘᴜᴛᴛ Vᴇʀsɪᴏɴ :** `{ayiin_version}` [{HOSTED_ON}]\n"
         f"{emoji} **Bᴏᴛ Uᴘᴛɪᴍᴇ :** `{uptime}`\n"
         "╰✠╼━━━━━━━━━━━━━━━✠╯\n\n"
     )
