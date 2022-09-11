@@ -280,7 +280,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 # Jangan di hapus Nanti ERROR
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/ayiinblacklist.json"
+        "https://raw.githubusercontent.com/iamuput/eizy/master/ayiinblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -297,7 +297,7 @@ gc = str(b64decode("QFVwdXR0c3VwcG9ydA=="))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
-        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/whitelist.json"
+        "https://raw.githubusercontent.com/iamuput/eizy/master/whitelist.json"
     )
     if _WHITELIST.status_code != 200:
         if 0 != 5:
