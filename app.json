@@ -18,6 +18,10 @@
       "description": "Dapatkan String Session di Grup » https://t.me/uputtsupport » Lalu ketik /get string",
       "required": true
     },
+     "BOTLOG_CHATID": {
+      "description": "Dapatkan String Session di Grup » https://t.me/uputtsupport » Lalu ketik /get string",
+      "required": true
+    },
     "HEROKU_APP_NAME": {
       "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
       "required": true
