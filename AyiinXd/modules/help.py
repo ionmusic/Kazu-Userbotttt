@@ -18,7 +18,7 @@ from telethon.tl.functions.contacts import UnblockRequest
 
 
 from AyiinXd import CMD_HANDLER as cmd
-from AyiinXd import CMD_HELP, ICON_HELP, ch
+from AyiinXd import CMD_HELP, ICON_HELP, ch tgbot
 from AyiinXd.ayiin import ayiin_cmd, eod, eor
 from Stringyins import get_string
 
@@ -83,6 +83,3 @@ async def helpyins(event):
                 event,
                 "**Silahkan Buat BOT di @BotFather dan Tambahkan Var** `BOT_TOKEN` & `BOT_USERNAME`",
             )
-Footer
-© 2022
-
