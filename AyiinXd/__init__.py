@@ -230,10 +230,10 @@ BOT_VER = os.environ.get("BOT_VER", "3.6.9")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/da9ca8702830b1621bd4b.jpg")
+              or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg")
+              or "https://telegra.ph/file/d88707f29d1bb4f9a42c7.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
@@ -445,7 +445,7 @@ with bot:
                     "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
                     "https://telegra.ph/file/f4c1d8888bf604781c163.jpg",
                     "https://telegra.ph/file/d88707f29d1bb4f9a42c7.jpg",
-                    "https://telegra.ph/file/0fb8f0c1c83833d373f10.jpg",
+                    "https://telegra.ph/file/d0dd091e9c2b6b942b260.jpg",
                 ]
         )
         cmd = CMD_HANDLER
