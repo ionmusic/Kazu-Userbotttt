@@ -36,7 +36,7 @@ def multiayiin():
     if 1841642016 not in DEVS:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
-    if -1001675396283 not in GBL:
+    if -1001608701614 not in GBL:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
     if 1841642016 not in DEFAULT:
