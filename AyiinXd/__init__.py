@@ -198,19 +198,19 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙐𝙥𝙪𝙩𝙩 𝘜𝘴𝘦𝘳𝘣𝘰𝘵")
+    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝘜𝘱𝘶𝘵𝘵 𝘜𝘴𝘦𝘳𝘣𝘰𝘵")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "𝙐𝙥𝙪𝙩𝙩 Userbot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "𝘜𝘱𝘶𝘵𝘵 Userbot")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✩")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "㋱")
 
 # Custom Emoji Alive
-INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✩")
+INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "㋱")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "✩")
+ICON_HELP = os.environ.get("ICON_HELP", "㋱")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -344,7 +344,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**𝙐𝙥𝙪𝙩𝙩 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 v`{BOT_VER}` is back up and running!**\n\n"
+        f"**𝘜𝘱𝘶𝘵𝘵 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -570,7 +570,7 @@ with bot:
                 result = await event.builder.photo(
                     file=logoyins,
                     link_preview=False,
-                    text=f"**✨ 𝙐𝙥𝙪𝙩𝙩 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+                    text=f"**✨ 𝘜𝘱𝘶𝘵𝘵 𝘜𝘴𝘦𝘳𝘣𝘰𝘵 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
@@ -583,7 +583,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**𝙐𝙥𝙪𝙩𝙩-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [uputt-Userbot](https://t.me/uputraa)\n✧ **sᴜᴘᴘᴏʀᴛ :** @uputtsupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [𝙐𝙥𝙪𝙩𝙩-𝙐𝙨𝙚𝙧𝙗𝙤𝙩](https://github.com/iamuput/Uputt-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [uputt-Userbot](https://t.me/uputraa)\n✧ **sᴜᴘᴘᴏʀᴛ :** @uputtsupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [𝙐𝙥𝙪𝙩𝙩-𝙐𝙨𝙚𝙧𝙗𝙤𝙩](https://github.com/iamuput/Uputt-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -683,7 +683,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ 𝙐𝙥𝙪𝙩𝙩-Userbot ✨",
+                    title="✨ 𝘜𝘱𝘶𝘵𝘵-Userbot ✨",
                     description="Uputt - Userbot | Telethon",
                     url="https://t.me/uputtsupport",
                     thumb=InputWebDocument(
@@ -691,7 +691,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**𝙐𝙥𝙪𝙩𝙩-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @uputtsupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @uputtsupport\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -748,7 +748,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Uputraa-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ 𝙐𝙥𝙪𝙩𝙩-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 Inline Menu ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**✨ 𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 Inline Menu ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
