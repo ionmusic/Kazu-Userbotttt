@@ -83,3 +83,5 @@ async def helpyins(event):
                 event,
                 "**Silahkan Buat BOT di @BotFather dan Tambahkan Var** `BOT_TOKEN` & `BOT_USERNAME`",
             )
+Footer
+© 2022 
