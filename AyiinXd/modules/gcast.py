@@ -45,6 +45,7 @@ GCAST_BLACKLIST = [
     -1001347414136,  # ArunaMutualan
     -1001726206158,  # Nandesupport
     -1001608701614,  # Uputtsupport
+    -1001578091827,  # PrimeSupport
 ]
 
 Heroku = heroku3.from_key(HEROKU_API_KEY)
