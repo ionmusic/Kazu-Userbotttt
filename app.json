@@ -19,7 +19,11 @@
       "required": true
     },
      "BOTLOG_CHATID": {
-      "description": "Dapatkan String Session di Grup » https://t.me/uputtsupport » Lalu ketik /get string",
+      "description": "Dapatkan Id dengan memasukin @MissRose_bot lalu ketik /id di Grup Kamu buat",
+      "required": true
+    },
+     "BOT_TOKEN": {
+      "description": "Dapatkan Token Dari @Botfather",
       "required": true
     },
     "HEROKU_APP_NAME": {
