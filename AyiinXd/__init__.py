@@ -233,14 +233,14 @@ ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
               or "https://telegra.ph/file/da9ca8702830b1621bd4b.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/da9ca8702830b1621bd4b.jpg")
+              or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
             or ".png")
 
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
-             or "https://telegra.ph/file/da9ca8702830b1621bd4b.png")
+             or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg")
 
 DEFAULT = list(map(int, b64decode("MTg0MTY0MjAxNg==").split()))
 
