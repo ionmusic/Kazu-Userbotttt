@@ -1,11 +1,11 @@
  <h1 align="center">💥 Uᴘᴜᴛᴛ U𝚂ᴇʀʙᴏᴛ 💥</h1>
 
-<a href="https://github.com/sip-Userbot/Nande-Telethon/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/iamuput/Uputt-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/AyiinXd/Ayiin-Userbot)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/AyiinXd/Ayiin-Userbot/graphs/commit-activity)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/AyiinXd/Ayiin-Userbot/dashboard)
-[![GitHub Forks](https://img.shields.io/github/forks/sip-Userbot/Nande-Telethon?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/fork)
-[![GitHub Stars](https://img.shields.io/github/stars/sip-Userbot/Nande-Telethon?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/sip-Userbot/Uputt-Userbot?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/iamuput/Uputt-Userbot?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/stargazers)
 
 
 <p align="center">
@@ -47,9 +47,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 ### Tutorial Deploy di VPS
 
 
- • `git clone https://github.com/sip-Userbot/Nande-Telethon`
+ • `git clone https://github.com/iamuput/Uputt-Userbot`
 
- • `cd Nande-Telethon`
+ • `cd Uputt-Userbot`
 
  • `pip3 install -U -r requirements.txt`
 
@@ -61,7 +61,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
   - ketik ctrl + S
   - ctrl + X
 
- • `screen -S Ayiin-Userbot`
+ • `screen -S Uputt-Userbot`
 
  • `bash start`
 
@@ -71,7 +71,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 <summary><b>🔗 Deploy To Heroku</b></summary>
 <br>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/AyiinXd/DeployAyiin"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/sip-Userbot/Uputt-Userbot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
@@ -79,13 +79,13 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 <summary><b>🔗 Deploy To Bot Heroku</b></summary>
 <br>
 
-<p><a href="https://telegram.dog/XTZ_HerokuBot?start=QXlpaW5YZC9BeWlpbi1Vc2VyYm90IEF5aWluLVVzZXJib3Q"><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
+<p><a href="https://telegram.dog/XTZ_HerokuBot?start=SWFtdXB1dC9VcHV0dC1Vc2VyYm90IFVwdXR0LVVzZXJib3Q"><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
 
 </details>
 
 ## Updates & Support
 
-Follow Channel [@ohgitunih](https://t.me/Uputtsupport) untuk info Update bot dan Gabung Group [@suportsipuserbot](https://t.me/suportsipuserbot) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Nande-Telethon.
+Follow Channel [@ohgitunih](https://t.me/Uputtsupport) untuk info Update bot dan Gabung Group [@Uputtsupport](https://t.me/Uputtsupport) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Uputt-Userbot.
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/Man-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [AdekMaulana](https://github.com/adekmaulana) : ProjectBish
@@ -107,6 +107,6 @@ Follow Channel [@ohgitunih](https://t.me/Uputtsupport) untuk info Update bot dan
 -  [AyiinXd](https://github.com/AyiinXd) for [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)
 -  [sip](https://github.com/sip-Userbot) for [Nande-Telethon](https://github.com/sip-Userbot/Nande-Telethon)
 ## License
-Licensed under [Raphielscape Public License](https://github.com/AyiinXd/Ayiin-Userbot/blob/Ayiin-Userbot/LICENSE) - Version 1.d, February 2020
+Licensed under [Raphielscape Public License](https://github.com/iamuput/Uputt-Userbot/blob/Uputt-Userbot/LICENSE) - Version 1.d, February 2020
 
 
