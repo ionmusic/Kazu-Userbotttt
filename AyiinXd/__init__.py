@@ -442,9 +442,9 @@ with bot:
         logo = ALIVE_LOGO
         logoyins = random.choice(
                 [
-                    "https://telegra.ph/file/17770ad693a43ebeb0fb6.jpg",
+                    "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg",
                     "https://telegra.ph/file/eb91a27fb97d1b23b4d78.jpg",
-                    "https://telegra.ph/file/de0ada709f5936e5f058c.jpg",
+                    "https://telegra.ph/file/17770ad693a43ebeb0fb6.jpg",
                     "https://telegra.ph/file/59938416368ab2624ad89.jpg",
                 ]
         )
