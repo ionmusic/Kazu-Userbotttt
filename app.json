@@ -1,13 +1,13 @@
 {
-  "name": "uput-userbot",
-  "description": "[uput-userbot] Selamat pakai, Luh songong gw takol",
+  "name": "Uputt-Userbot",
+  "description": "[Uputt-Userbot] Selamat pakai, Luh songong gw takol",
   "logo": "https://telegra.ph/file/17dbf290bbadaf6290806.jpg",
   "keywords": ["telegram", "userbot", "uput-userbot ", "modular", "python"],
   "repository": "https://github.com/iamuput/Uputt-Userbot",
   "stack": "container",
   "env": {
-    "API_KEY": {
-      "description": "Dapatkan API KEY di Grup » https://t.me/suportsipuserbot » Lalu ketik /get api atau di web my.telegram.org Masukan yg APP ID Telegram",
+    "API_ID": {
+      "description": "Dapatkan API ID di Grup » https://t.me/uputtsupport » Lalu ketik /get api atau di web my.telegram.org Masukan yg APP ID Telegram",
       "required": true
     },
     "API_HASH": {
@@ -19,7 +19,7 @@
       "required": true
     },
      "BOTLOG_CHATID": {
-      "description": "Dapatkan Id dengan memasukin @MissRose_bot lalu ketik /id di Grup Kamu buat",
+      "description": "Dapatkan Id dengan memasukkan @MissRose_bot lalu ketik /id di Grup Kamu Yang buat",
       "required": true
     },
     "HEROKU_APP_NAME": {
