@@ -184,7 +184,7 @@ async def amireallyalive(alive):
     adB = AyiinDB()
     user = await alive.client.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
-    await alive.edit("🥵")
+    await alive.edit("🎈")
     await asyncio.sleep(3)
     output = (
         f"**Tʜᴇ [Uᴘᴜᴛᴛ Usᴇʀʙᴏᴛ](https://github.com/iamuput/Uputt-Userbot)**\n\n"
