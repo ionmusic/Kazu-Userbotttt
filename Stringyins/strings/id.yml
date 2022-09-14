@@ -51,7 +51,7 @@ error_8: "**KESALAHAN: {} tidak merespon silahkan coba lagi nanti**"
 #for yins
 ayiin_1: "**[ᴋᴏɴᴛᴏʟ]** - Perintah Itu Dilarang Di Gc Ini Goblok..."
 ayiin_2: "**[ᴋᴏɴᴛᴏʟ]** - Tidak dapat menyamar sebagai Developer Uputt-Userbot Ngentod 😡"
-ayiin_3: "**Maaf Telah MengClone Ayiin 🥺**"
+ayiin_3: "**Maaf Telah MengClone Uputt 🥺**"
 
 # admintools
 prom_1: "`Mempromosikan...`"
@@ -844,7 +844,7 @@ tgph_2: "**Berhasil diupload ke** [telegra.ph](https://telegra.ph{})"
 tgph_3: "**Mohon Balas Ke Pesan, Untuk Mendapatkan Link Telegraph Permanen.**"
 
 # tempmail tools
-tempmail_1: "**AYIIN TEMPMAIL** ~ `{}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({})"
+tempmail_1: "**UPUTT TEMPMAIL** ~ `{}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({})"
 tempmail_2: "`Mohon Maaf, Silahkan Buka` @TempMailBot `Lalu Tekan Start dan Coba Lagi.`"
 
 # tiktok tools
@@ -987,8 +987,8 @@ yicpl_2: "**[ᴇʀʀᴏʀ]** Maaf Tod Gagal Dikarenakan Lu Jomblo..."
 # yiinsimg tools
 yimg_1: "`Sedang Menyiapkan Media...`"
 yimg_2: "`Mohon Masukkan Yang Bener...`"
-yimg_3: "⍟ __Sketsa Hasilkan oleh Ayiin-Userbot__ ⍟"
-yimg_4: "⍟ __Pixelator Dihasilkan oleh Ayiin-Userbot__ ⍟"
+yimg_3: "⍟ __Sketsa Hasilkan oleh Uputt-Userbot__ ⍟"
+yimg_4: "⍟ __Pixelator Dihasilkan oleh Uputt-Userbot__ ⍟"
 
 # yiinstod tools
 tod_1: "    __Truth Or Dare ???__\n\n__Didapatkan Secara Acak__\n**      »» {} ««**"
