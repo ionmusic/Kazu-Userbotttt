@@ -611,7 +611,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "Bᴏᴛ Sᴛʀɪɴɢ",
-                                url="https://t.me/Uputtstringbot?start="),
+                                url="https://t.me/StringUputtBot?start="),
                             custom.Button.url(
                                 "Sᴛʀɪɴɢ Rᴇᴘʟɪᴛ",
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
