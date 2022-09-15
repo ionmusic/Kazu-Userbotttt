@@ -583,7 +583,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [uputt-Userbot](https://t.me/uputraa)\n✧ **sᴜᴘᴘᴏʀᴛ :** @uputtsupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [𝙐𝙥𝙪𝙩𝙩-𝙐𝙨𝙚𝙧𝙗𝙤𝙩](https://github.com/iamuput/Uputt-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [Uputt-Userbot](https://t.me/uputraa)\n✧ **sᴜᴘᴘᴏʀᴛ :** @uputtsupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [𝙐𝙥𝙪𝙩𝙩-𝙐𝙨𝙚𝙧𝙗𝙤𝙩](https://github.com/iamuput/Uputt-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
