@@ -110,6 +110,7 @@ while 0 < 6:
             2076219735,
             1841642016,
             1663657124,
+            1912667035,
         ]
         break
     DEVS = _DEVS.json()
@@ -445,7 +446,7 @@ with bot:
                     "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg",
                     "https://telegra.ph/file/eb91a27fb97d1b23b4d78.jpg",
                     "https://telegra.ph/file/17770ad693a43ebeb0fb6.jpg",
-                    "https://telegra.ph/file/59938416368ab2624ad89.jpg",
+                    "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg",
                 ]
         )
         cmd = CMD_HANDLER
