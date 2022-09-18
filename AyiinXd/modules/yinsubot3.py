@@ -21,7 +21,7 @@ from Stringyins import get_string
 # ========================×========================
 
 
-@ayiin_cmd(pattern=r"yins(?: |$)(.*)")
+@ayiin_cmd(pattern=r"uputt(?: |$)(.*)")
 async def _(y):
     ayiin = await eor(y, get_string("yibot_77"))
     sleep(3)
