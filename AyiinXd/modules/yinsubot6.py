@@ -58,7 +58,7 @@ async def _(d):
 
 CMD_HELP.update(
     {
-        "yinsubot6": f"**Plugin : **`yinsubot6`\
+        "yinsubot6": f"**Plugin : **`Uputt-Userbot`\
         \n\n  »  **Perintah :** `{cmd}cacad`\
         \n  »  **Kegunaan :** Coba Sendiri Tod.\
         \n\n  »  **Perintah :** `{cmd}hayolo`\
