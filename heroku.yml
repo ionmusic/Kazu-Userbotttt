@@ -2,4 +2,4 @@ build:
   docker:
       ayiin: Dockerfile
 run:
-   ayiin: bash start
+   uputt: bash start
