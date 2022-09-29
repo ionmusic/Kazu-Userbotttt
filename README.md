@@ -1,11 +1,11 @@
  <h1 align="center">💥 Uᴘᴜᴛᴛ U𝚂ᴇʀʙᴏᴛ 💥</h1>
 
 <a href="https://github.com/iamuput/Uputt-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/AyiinXd/Ayiin-Userbot)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/AyiinXd/Ayiin-Userbot/graphs/commit-activity)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/iamuput/Uputt-Userbot)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/iamuput/Uputt-Userbot/graphs/commit-activity)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/iamuput/Uputt-Userbot/dashboard)
-[![GitHub Forks](https://img.shields.io/github/forks/iamuput/Uputt-Userbot?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/fork)
-[![GitHub Stars](https://img.shields.io/github/stars/iamuput/Uputt-Userbot?&logo=github)](https://github.com/AyiinXd/Ayiin-Userbot/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/iamuput/Uputt-Userbot?&logo=github)](https://github.com/iamuput/Uputt-Userbot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/iamuput/Uputt-Userbot?&logo=github)](https://github.com/iamuput/Uputt-Userbot/stargazers)
 
 
 <p align="center">
@@ -99,6 +99,7 @@ Follow Channel [@ohgitunih](https://t.me/Uputtsupport) untuk info Update bot dan
 -  [Alvin](https://github.com/Zora24/Lord-Userbot) : Lord-Userbot
 -  [AyiinXd](https://github.com/AyiinXd/Ayiin-Userbot) : Ayiin-Userbot
 -  [sip-Userbot](https://github.com/sip-Userbot/Nande-Telethon): Nande-Telethon
+-  [IamUput](https://github.com/iamuput/Uputt-Userbot): Uputt-Userbot
 
 ## © Credits
 -  [MarshalX](https://github.com/MarshalX) for [PyTgcalls](https://github.com/MarshalX/tgcalls)
@@ -106,6 +107,7 @@ Follow Channel [@ohgitunih](https://t.me/Uputtsupport) untuk info Update bot dan
 -  [Risman](https://github.com/mrismanaziz) for [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)
 -  [AyiinXd](https://github.com/AyiinXd) for [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)
 -  [sip-Userbot](https://github.com/sip-Userbot) for [Nande-Telethon](https://github.com/sip-Userbot/Nande-Telethon)
+-  [IamUput](https://github.com/iamuput) for [Uputt-Userbot](https://github.com/iamuput/Uputt-Userbot)
 ## License
 Licensed under [Raphielscape Public License](https://github.com/iamuput/Uputt-Userbot/blob/Uputt-Userbot/LICENSE) - Version 1.d, February 2020
 
