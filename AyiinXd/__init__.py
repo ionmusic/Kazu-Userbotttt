@@ -549,7 +549,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ Uᴘᴜᴛᴛ Usᴇʀʙᴏᴛ 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**✨ 𝚄𝙿𝚄𝚃𝚃 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸𝙽𝙻𝙸𝙽𝙴 𝙼𝙴𝙽𝚄 ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
@@ -584,7 +584,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**Uᴘᴜᴛᴛ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [Uputt-Userbot](https://t.me/uputraa)\n✧ **sᴜᴘᴘᴏʀᴛ :** @uputtsupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [𝙐𝙥𝙪𝙩𝙩-𝙐𝙨𝙚𝙧𝙗𝙤𝙩](https://github.com/iamuput/Uputt-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [Uputt-Userbot](https://t.me/uputraa)\n✧ **sᴜᴘᴘᴏʀᴛ :** @uputtsupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [ᴜᴘᴜᴛᴛ-ᴜsᴇʀʙᴏᴛ](https://github.com/iamuput/Uputt-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
