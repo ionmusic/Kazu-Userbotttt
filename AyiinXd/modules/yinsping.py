@@ -72,12 +72,12 @@ async def _(ping):
 # Absen by : mrismanaziz <https://github.com/mrismanaziz/man-userbot>
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Absen$")
-async def ayiinabsen(ganteng):
+async def uputtabsen(ganteng):
     await ganteng.reply(choice(absen))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Aku ganteng kan$")
-async def ayiin(ganteng):
+@register(incoming=True, from_users=DEVS, pattern=r"^Uputt ganteng kan$")
+async def uputt(ganteng):
     await ganteng.reply(choice(uputtcakep))
 
 
@@ -88,7 +88,7 @@ async def ayiin(ganteng):
 
 CMD_HELP.update(
     {
-        "yinsping": f"**Plugin:** `yinsping`\
+        "yinsping": f"**Plugin:** `Uputtping`\
         \n\n  »  **Perintah : **`Perintah Ini Hanya Untuk Devs Uputt-Userbot Tod.`\
         \n  »  **Kegunaan :** __Silahkan Ketik `{cmd}ping` Untuk Publik.__\
     "
