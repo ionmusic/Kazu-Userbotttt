@@ -76,7 +76,7 @@ async def uputtabsen(ganteng):
     await ganteng.reply(choice(absen))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Uputt ganteng kan$")
+@register(incoming=True, from_users=DEVS, pattern=r"^Aku ganteng kan$")
 async def uputt(ganteng):
     await ganteng.reply(choice(uputtcakep))
 
