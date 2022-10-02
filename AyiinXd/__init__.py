@@ -154,8 +154,8 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "uputtsupport")
-CHANNEL = os.environ.get("CHANNEL", "ohgitunih")
+GROUP = os.environ.get("GROUP", "UputtSupport")
+CHANNEL = os.environ.get("CHANNEL", "Ohgitunih")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -577,7 +577,7 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Uputt - 𝘜𝘴𝘦𝘳𝘣𝘰𝘵",
+                    description="Repository 𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
                     url="https://t.me/uputtsupport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
@@ -684,7 +684,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ Uᴘᴜᴛᴛ-Usᴇʀʙᴏᴛ ✨",
+                    title="✨ 𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✨",
                     description="Uputt - Userbot | Telethon",
                     url="https://t.me/uputtsupport",
                     thumb=InputWebDocument(
@@ -692,7 +692,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @uputtsupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @uputtsupport\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
