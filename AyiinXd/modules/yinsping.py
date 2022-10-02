@@ -39,7 +39,7 @@ absen = [
     "**Hadir Bro Uputt** 😁",
     "**Maaf ka habis nemenin ka Uputt** 🥺",
     "**Maaf ka habis disuruh Tuan Uputt** 🥺🙏🏻",
-    "**Hadir Uputt Sayang** 😘"
+    "**Hadir Uputt Sayang** 😘",
     "**Hadir Uputt Akuuuuhhh** ☺️",
     "**Hadir Uputt brother Aku** 🥰",
 ]
