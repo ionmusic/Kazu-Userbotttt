@@ -243,7 +243,7 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"Useebot/modules/{shortname}.py")
+        path = Path(f"Userbot/modules/{shortname}.py")
         name = "Userbot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
