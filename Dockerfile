@@ -4,13 +4,13 @@
 
 FROM ayiinxd/ayiin-userbot:buster
 
-RUN git clone -b Uputt-Userbot https://github.com/iamuput/Uputt-Userbot /home/uputtuserbot/ \
-    && chmod 777 /home/uputtuserbot \
-    && mkdir /home/uputtuserbot/bin/
+RUN git clone -b Kazu-Userbot https://github.com/ionmusic/Kazu-Userbot /home/kazuuserbot/ \
+    && chmod 777 /home/kazuuserbot \
+    && mkdir /home/kazuserbot/bin/
 
-COPY ./sample_config.env ./config.env* /home/uputtuserbot/
+COPY ./sample_config.env ./config.env* /home/kazuuserbot/
 
-WORKDIR /home/uputtuserbot/
+WORKDIR /home/kazuuserbot/
 
 RUN pip install -r requirements.txt
 
