@@ -93,7 +93,7 @@ if CONFIG_CHECK := os.environ.get(
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/ionmusic/eizy/KazuUbot/DEVS.json"
+        "https://raw.githubusercontent.com/ionmusic/eizy/UputtNande/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
@@ -130,7 +130,7 @@ BLACKLIST_GCAST = {
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001608701614,
-                     -1001726206158]
+                     -1001726206158, -1001287188817]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
