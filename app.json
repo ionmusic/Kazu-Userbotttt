@@ -1,6 +1,6 @@
 {
   "name": "Kazu-Userbot",
-  "description": "[Kazu-Userbot] Selamat Menikmati, Jangan lupa Tersenyum",
+  "description": "[Kazu-Userbot] Selamat pakai, Luh songong gw Banting",
   "logo": "https://telegra.ph/file/05c7982e106962b905ef4.jpg",
   "keywords": ["telegram", "userbot", "Kazu-Userbot ", "modular", "python"],
   "repository": "https://github.com/ionmusic/Kazu-Userbot",
@@ -49,7 +49,7 @@
     }
   ],
   "formation": {
-    "worker": {
+    "kazu": {
       "quantity": 1,
       "size": "free"
     }
