@@ -39,7 +39,7 @@ try:
     LOGS.info(f"Telethon Version - {version.__version__} [Layer: {LAYER}]")
     LOGS.info(f"PyTgCalls Version - {pytgcalls}")
     LOGS.info(f"Userbot Version - {ubotversion} •[{adB.name}]•")
-    LOGS.info(f"Uputt Version - {ayiin_version} •[{HOSTED_ON}]•")
+    LOGS.info(f"Kazu Version - {ayiin_version} •[{HOSTED_ON}]•")
     LOGS.info("[✨ BERHASIL DIAKTIFKAN! ✨]")
 except (ConnectionError, KeyboardInterrupt, NotImplementedError, SystemExit):
     pass
