@@ -72,7 +72,7 @@ Selamat bersenang-senang.
 <summary><b>🔗 Deploy To Heroku</b></summary>
 <br>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/ionmusic/KazuUBot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/ionmusic/Kazu-Userbot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
@@ -80,7 +80,7 @@ Selamat bersenang-senang.
 <summary><b>🔗 Deploy To Bot Heroku</b></summary>
 <br>
 
-<p><a href="https://telegram.dog/XTZ_HerokuBot?start=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"><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
+<p><a href="https://telegram.dog/XTZ_HerokuBot?start=https://github.com/ionmusic/Kazu-Userbot"><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
 
 </details>
 
@@ -101,7 +101,7 @@ Follow Channel [@punyaionnibos](https://t.me/punyaionnibos) untuk info Update bo
 -  [AyiinXd](https://github.com/AyiinXd/Ayiin-Userbot) : Ayiin-Userbot
 -  [sip-Userbot](https://github.com/sip-Userbot/Nande-Telethon): Nande-Telethon
 -  [IamUput](https://github.com/iamuput/Uputt-Userbot): Uputt-Userbot
--  [ionmusic](https://github.com/ionmusic/KazuUBot) : Kazu-Userbot
+-  [ionmusic](https://github.com/ionmusic/Kazu-Userbot) : Kazu-Userbot
 
 ## © Credits
 -  [MarshalX](https://github.com/MarshalX) for [PyTgcalls](https://github.com/MarshalX/tgcalls)
@@ -110,7 +110,7 @@ Follow Channel [@punyaionnibos](https://t.me/punyaionnibos) untuk info Update bo
 -  [AyiinXd](https://github.com/AyiinXd) for [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)
 -  [sip-Userbot](https://github.com/sip-Userbot) for [Nande-Telethon](https://github.com/sip-Userbot/Nande-Telethon)
 -  [IamUput](https://github.com/iamuput) for [Uputt-Userbot](https://github.com/iamuput/Uputt-Userbot)
--  [ionmusic](https://github.com/ionmusic) for [Kazu-Userbot](https://github.com/ionmusic/KazuUBot)
+-  [ionmusic](https://github.com/ionmusic) for [Kazu-Userbot](https://github.com/ionmusic/Kazu-Userbot)
 ## License
 Licensed under [Raphielscape Public License](https://github.com/ionmusic/KazuUBot/blob/KazuUBot/LICENSE) - Version 1.d, February 2020
 
