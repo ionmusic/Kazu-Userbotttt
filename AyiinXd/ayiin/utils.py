@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="Uᴘᴜᴛᴛ-Usᴇʀʙᴏᴛ Lᴏɢs",
-                about="» Group log Created by: Uputt-Userbot\n\n» Support : @Uputtsupport\n» Support: @Ohgitunih",
+                title="𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 Lᴏɢs",
+                about="» Group log Created by: Kazu-Userbot\n\n» Support : @kazusupportgrp\n» Support: @punyaionnibos",
                 megagroup=True,
             ),
         )
@@ -135,7 +135,7 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
+              "https://telegra.ph/file/05c7982e106962b905ef4.jpg",
               "AyiinXd/resources/IMG-20220912-WA0047.jpg",
           ]
     )
@@ -145,7 +145,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"Uputt{(str(who.id))[6:]}{str(ran)}bot"
+        username = f"Kazu{(str(who.id))[6:]}{str(ran)}bot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -174,7 +174,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Ohgitunih ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @punyaionnibos ✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -218,7 +218,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Ohgitunih @UputtSupport ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @punyaionnibos @kazusupportgrp ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
