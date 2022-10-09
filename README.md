@@ -80,7 +80,8 @@ Selamat bersenang-senang.
 <summary><b>🔗 Deploy To Bot Heroku</b></summary>
 <br>
 
-<p><a href="https://telegram.dog/XTZ_HerokuBot?start=https://github.com/ionmusic/Kazu-Userbot"><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
+<p><a href="https://telegram.dog/XTZ_HerokuBot?start=aW9ubXVzaWMvS2F6dS1Vc2VyYm90IEthenUtVXNlcmJvdA=="><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
+
 
 </details>
 
