@@ -368,7 +368,7 @@ gban_8: "**Mohon Balas Ke Pesan Penggunanya**"
 gban_10: "**\\#𝙂𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧//**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{}](tg://user?id={})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝙂𝙡𝙤𝙗𝙖𝙡 𝘽𝙖𝙣𝙣𝙚𝙙`\n**𝙂𝙗𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{}`\n**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**"
 ungban_1: "`Membatalkan Perintah Larangan Global...`"
 ungban_2: "`Gagal Membatalkan Perintah Larangan Global...`"
-ungban_3: "`Gagal Membatalkan Perintah Larangan Global... Karena Dia Ada Di Daftar Hitam Uputt-Userbot`"
+ungban_3: "`Gagal Membatalkan Perintah Larangan Global... Karena Dia Ada Di Daftar Hitam 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃`"
 ungban_4: "**\\#𝙐𝙣𝙂𝙗𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧//**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{}](tg://user?id={})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝙐𝙣𝙂𝙡𝙤𝙗𝙖𝙡 𝘽𝙖𝙣𝙣𝙚𝙙`\n**𝙐𝙣𝙂𝙗𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{}`\n**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**"
 
 # gcast tools
@@ -531,10 +531,10 @@ memf_4: "**Tidak Dapat Mengurai Video ini.**"
 slbt_1: "`Saya mengantuk dan tertidur...`"
 slbt_2: "**Anda menyuruh bot untuk tidur selama** {}."
 slbt_3: "**Oke, Saya siap membantu mu**"
-shtdwn_1: "**#SHUTDOWN** \n**᯽ 𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 ᯽** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku"
-shtdwn_2: "**᯽ 𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 ᯽ Berhasil di matikan!**"
-rstrt_1: "**᯽ 𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 ᯽ Berhasil di Restart**"
-rstrt_2: "#RESTART \n**᯽ 𝘜𝘱𝘶𝘵𝘵-𝘜𝘴𝘦𝘳𝘣𝘰𝘵 ᯽ Berhasil Di Restart**"
+shtdwn_1: "**#SHUTDOWN** \n**᯽ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku"
+shtdwn_2: "**᯽ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di matikan!**"
+rstrt_1: "**᯽ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di Restart**"
+rstrt_2: "#RESTART \n**᯽ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil Di Restart**"
 rdme_1: "**Berikut sesuatu untuk kamu baca:**\n\n✣ [Userbot Repo](https://github.com/ionmusic/Kazu-Userbot/blob/KazuUBot/README.md)\n✣ [Video Tutorial](https://youtu.be/tTDaPKsGC1I)\n✣ [List Variabel Heroku untuk Kazu-Userbot](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)\n✣ [Setup Guide - Basic](https://mrismanaziz.medium.com/cara-memasang-userbot-telegram-repo-man-userbot-deploy-di-heroku-c56d1f8b5537)\n✣ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
 repo_1: "**Hey**, Saya Pengguna **✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧** \n卍━━━━━━━━━━━━━━━━━卍\n➣ **𝚁𝙴𝙿𝙾 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 :** [𝙶𝙸𝚃𝙷𝚄𝙱](https://github.com/ionmusic/Kazu-Userbot)\n➣ **𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃       :** [𝙺𝙰𝚉𝚄](t.me/disinikazu)\n卍━━━━━━━━━━━━━━━━━卍\n➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙶𝚁𝙾𝚄𝙿](https://t.me/fluxinhere
 raw_2: "**Inilah data pesan yang didecodekan !!**"
@@ -890,7 +890,7 @@ upd_13: "**✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Sudah Versi Ter
 upd_14: "`[HEROKU]: Update Deploy ✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Sedang Dalam Proses...`"
 upd_15: "**Perfoming a quick update, please wait...**"
 upd_16: "**Sinkronisasi Paksa Ke Kode Userbot Terbaru, Harap Tunggu...**"
-upd_17: "**Ketik** `{}update deploy` **Untuk Mengupdate ✧ 𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**"
+upd_17: "**Ketik** `{}update deploy` **Untuk Mengupdate ✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**"
 upd_18: "**Quick update telah dinonaktifkan untuk pembaruan ini. Gunakan** `{}update deploy` **sebagai gantinya.**"
 upd_19: "{}\n**Direktori** `{}` **Tidak Dapat Di Temukan.**"
 upd_20: "**[•]** - Proses Update\n✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ : `{}`"
@@ -986,8 +986,8 @@ yicpl_2: "**[ᴇʀʀᴏʀ]** Maaf Tod Gagal Dikarenakan Lu Jomblo..."
 # yiinsimg tools
 yimg_1: "`Sedang Menyiapkan Media...`"
 yimg_2: "`Mohon Masukkan Yang Bener...`"
-yimg_3: "⍟ __Sketsa Hasilkan oleh Uputt-Userbot__ ⍟"
-yimg_4: "⍟ __Pixelator Dihasilkan oleh Uputt-Userbot__ ⍟"
+yimg_3: "⍟ __Sketsa Hasilkan oleh 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃__ ⍟"
+yimg_4: "⍟ __Pixelator Dihasilkan oleh 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃__ ⍟"
 
 # yiinstod tools
 tod_1: "    __Truth Or Dare ???__\n\n__Didapatkan Secara Acak__\n**      »» {} ««**"
@@ -1258,4 +1258,4 @@ uzip_1: "`Membuat File Zip...`"
 rzip_1: "`Direktori tidak ditemukan`"
 rzip_2: "`Daftar pos dihapus`"
 
-# =================× Uputt-Userbot ×================= #
+# =================× 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ×================= #
