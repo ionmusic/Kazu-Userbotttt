@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/05c7982e106962b905ef4.jpg">
+  <img src="https://telegra.ph/file/762510fa43ef987980d55.jpg">
 </p>
 
 👩‍💻 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
