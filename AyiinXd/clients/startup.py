@@ -23,7 +23,7 @@ from AyiinXd import (
 )
 from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
-EOL = "EOL\n𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 v{}, Copyright © 2021-2022 Kazu• <https://github.com/ionmusic>"
+EOL = "EOL\nKazu-Userbot v{}, Copyright © 2021-2022 Kazu• <https://github.com/ionmusic>"
 MSG_BLACKLIST = "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOT {} GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\n𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 v{}, Copyright © 2021-2022 Kazu• <https://github.com/ionmusic>"
 
 
