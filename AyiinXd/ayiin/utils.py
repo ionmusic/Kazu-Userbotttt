@@ -136,7 +136,7 @@ async def autobot():
     filogo = random.choice(
           [
               "https://telegra.ph/file/4a7e1523892f591dd7158.jpg",
-              "AyiinXd/resources/IMG-20220912-WA0049.jpg",
+              "AyiinXd/resources/logo.jpg",
           ]
     )
     await bot.send_message(bf, username)
