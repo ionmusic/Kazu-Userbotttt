@@ -93,7 +93,7 @@ if CONFIG_CHECK := os.environ.get(
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/ionmusic/eizy/UputtNande/DEVS.json"
+        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
@@ -107,11 +107,11 @@ while 0 < 6:
             997461844,
             1663258664,
             2062364017,
-            2076219735,
-            1841642016,
+            2076219735,  
             1912667035,
             1663657124,
             5063062493,
+            1694909518,
         ]
         break
     DEVS = _DEVS.json()
@@ -282,7 +282,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 # Jangan di hapus Nanti ERROR
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/ionmusic/eizy/master/ayiinblacklist.json"
+        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/ayiinblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -299,7 +299,7 @@ gc = str(b64decode("QFVwdXR0c3VwcG9ydA=="))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
-        "https://raw.githubusercontent.com/ionmusic/eizy/master/whitelist.json"
+        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/whitelist.json"
     )
     if _WHITELIST.status_code != 200:
         if 0 != 5:
