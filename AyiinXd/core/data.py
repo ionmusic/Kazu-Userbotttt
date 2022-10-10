@@ -7,4 +7,4 @@ def blacklist_chats_list():
     except AttributeError:
         blacklistchats = {}
     blacklist = blacklistchats.keys()
-    return [int(chat) for chat in blacklist]
+    return [int(chat) for chat in blacklist
