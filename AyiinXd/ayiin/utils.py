@@ -18,7 +18,7 @@ from telethon.tl.functions.channels import (
 from telethon.tl.types import (
     ChatAdminRights,
 )
-from userbot import (
+from AyiinXD import (
     BOT_TOKEN,
     BOTLOG_CHATID,
     CMD_HELP,
@@ -49,7 +49,7 @@ async def autobot():
     if who.username:
         username = who.username + "_ubot"
     else:
-        username = "KazuY" + (str(who.id))[5:] + "ubot"
+        username = "KAZU" + (str(who.id))[5:] + "ubot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -82,7 +82,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "ALBY" + (str(who.id))[6:] + str(ran) + "ubot"
+        username = "KAZU" + (str(who.id))[6:] + str(ran) + "ubot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -176,16 +176,16 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"userbot/modules/{shortname}.py")
-        name = "userbot.modules.{}".format(shortname)
+        path = Path(AyiinXD/modules/{shortname}.py")
+        name = "AyiinXD.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
 
-        path = Path(f"userbot/modules/{shortname}.py")
-        name = "userbot.modules.{}".format(shortname)
+        path = Path(f"AyiinXD/modules/{shortname}.py")
+        name = "AyiinXD.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -194,7 +194,7 @@ def load_module(shortname):
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["userbot.modules." + shortname] = mod
+        sys.modules["AyiinXD.modules." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -202,21 +202,21 @@ def start_assistant(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"userbot/modules/assistant/{shortname}.py")
-        name = "userbot.modules.assistant.{}".format(shortname)
+        path = Path(f"AyiinXD/modules/assistant/{shortname}.py")
+        name = "AyiinXD.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Starting Your Assistant Bot.")
         LOGS.info("Assistant Sucessfully imported " + shortname)
     else:
-        path = Path(f"userbot/modules/assistant/{shortname}.py")
-        name = "userbot.modules.assistant.{}".format(shortname)
+        path = Path(f"AyiinXD/modules/assistant/{shortname}.py")
+        name = "AyiinXD.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["userbot.modules.assistant" + shortname] = mod
+        sys.modules["AyiinXD.modules.assistant" + shortname] = mod
         LOGS.info("Assistant Successfully imported" + shortname)
 
 
@@ -228,7 +228,7 @@ def remove_plugin(shortname):
             del CMD_HELP[shortname]
 
         except BaseException:
-            name = f"userbot.modules.{shortname}"
+            name = f"AyiinXD.modules.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -283,8 +283,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="á´€ÊŸÊ™Ê ÊŸá´É¢s",
-                about="á´Ê á´€ÊŸÊ™Ê ÊŸá´É¢s É¢Ê€á´á´œá´˜\n\n Join @ruangprojects",
+                title="KAZU USERBOT LOGS",
+                about="Group Log Created by : Kazu-Userbot\n\n Join @punyaionnibos",
                 megagroup=True,
             ),
         )
