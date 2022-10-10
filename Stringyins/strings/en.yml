@@ -843,7 +843,7 @@ tgph_2: "**Successfully uploaded to** [telegra.ph](https://telegra.ph{})"
 tgph_3: "**Please reply to the message, to get a permanent telegraph link.**"
 
 # tempmail tools
-tempmail_1: "**UPUTT TEMPMAIL** ~ `{}`\n\n[CLICK HERE FOR VERIFICATION]({})"
+tempmail_1: "**KAZU TEMPMAIL** ~ `{}`\n\n[CLICK HERE FOR VERIFICATION]({})"
 tempmail_2: "`Sorry, Please Open `@TempMailBot` Then Press Start and Try Again.`"
 
 # tiktok tools
