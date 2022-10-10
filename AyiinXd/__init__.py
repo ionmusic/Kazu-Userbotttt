@@ -155,7 +155,7 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "fluxxinhere")
+GROUP = os.environ.get("GROUP", "kazusupportgrp")
 CHANNEL = os.environ.get("CHANNEL", "punyaionnibos")
 
 # Heroku Credentials for updater.
@@ -585,12 +585,12 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://t.me/disinikazu)\n✧ **sᴜᴘᴘᴏʀᴛ :** @fluxinhere\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [KazuUBot](https://github.com/ionmusic/Kazu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://t.me/disinikazu)\n✧ **sᴜᴘᴘᴏʀᴛ :** @kazusupportgrp\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [KazuUBot](https://github.com/ionmusic/Kazu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/fluxinhere"),
+                                "https://t.me/kazusupportgrp"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
                                 "https://github.com/ionmusic/Kazu-Userbot"),
@@ -602,7 +602,7 @@ with bot:
                 result = builder.article(
                     title="String",
                     description="String 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
-                    url="https://t.me/fluxinhere",
+                    url="https://t.me/kazusupportgrp",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -619,7 +619,7 @@ with bot:
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
                         ],
                         [
-                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/fluxinhere"),
+                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/kazusupportgrp"),
                         ],
                     ],
                     link_preview=False,
@@ -641,7 +641,7 @@ with bot:
                 result = builder.article(
                     title="Lang",
                     description="Lang 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
-                    url="https://t.me/fluxinhere",
+                    url="https://t.me/kazusupportgrp",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -687,18 +687,18 @@ with bot:
                 result = builder.article(
                     title="𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
                     description="𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 | Telethon",
-                    url="https://t.me/fluxinhere",
+                    url="https://t.me/kazusupportgrp",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @fluxinhere\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @kazusupportgrp\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/fluxinhere"),
+                                "https://t.me/kazusupportgrp"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
                                 "https://github.com/ionmusic/Kazu-Userbot"),
@@ -1062,4 +1062,4 @@ with bot:
 
     except BaseException:
         LOGS.info(
-            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @fluxinhere » TAG @disinikazu » Info By: 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 {BOT_VER}")
+            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @kazusupportgrp » TAG @disinikazu » Info By: 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 {BOT_VER}")
