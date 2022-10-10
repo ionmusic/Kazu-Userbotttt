@@ -59,7 +59,7 @@ async def autopilot():
         r = await bot(
             CreateChannelRequest(
                 title="𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 Lᴏɢs",
-                about="» Group log Created by:𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃\n\n» Support : @fluxinhere\n» Support: @punyaionnibos",
+                about="» Group log Created by:𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃\n\n» Support : @fluxinhere\n» Support: @punyaionnibos",
                 megagroup=True,
             ),
         )
@@ -135,7 +135,7 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://telegra.ph/file/762510fa43ef987980d55.jpg",
+              "https://telegra.ph/file/4a7e1523892f591dd7158.jpg",
               "AyiinXd/resources/IMG-20220912-WA0047.jpg",
           ]
     )
