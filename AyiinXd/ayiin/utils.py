@@ -1,24 +1,17 @@
 # Credits: @mrismanaziz
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
-#
-# autopilot by @kenkan
 
 import asyncio
 import importlib
 import logging
-import random
 import sys
 from pathlib import Path
 from random import randint
 
-
 import heroku3
+from telethon.tl.functions.channels import CreateChannelRequest
 from telethon.tl.functions.contacts import UnblockRequest
-from telethon.errors import ChannelsTooMuchError
-from telethon.tl.functions.channels import CreateChannelRequest, EditPhotoRequest
-from telethon.tl.types import ChatPhotoEmpty, InputChatUploadedPhoto
-from telethon.utils import get_peer_id
 
 from AyiinXd import (
     BOT_TOKEN,
@@ -29,9 +22,6 @@ from AyiinXd import (
     LOGS,
     bot,
 )
-
-from .tools import download_file
-
 
 heroku_api = "https://api.heroku.com"
 if HEROKU_APP_NAME is not None and HEROKU_API_KEY is not None:
@@ -44,52 +34,20 @@ else:
 
 async def autopilot():
     LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
-    if BOTLOG_CHATID and str(BOTLOG_CHATID).startswith("-100"):
-        return
-    y = []  # To Refresh private ids
-    async for x in bot.iter_dialogs():
-        y.append(x.id)
-    if BOTLOG_CHATID:
-        try:
-            await bot.get_entity(int("BOTLOG_CHATID"))
-            return
-        except BaseException:
-            del heroku_var["BOTLOG_CHATID"]
+    desc = "Group Log untuk Kazu-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @kazusupportgrp ✨"
     try:
-        r = await bot(
-            CreateChannelRequest(
-                title="𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 Lᴏɢs",
-                about="» Group log Created by: Kazu-Userbot\n\n» Support : @kazusupportgrp\n» Support: @punyaionnibos",
-                megagroup=True,
-            ),
+        grup = await bot(
+            CreateChannelRequest(title="Kazu-Userbot logs", about=desc, megagroup=True)
         )
-    except ChannelsTooMuchError:
-        LOGS.info(
-            "Channel dan Group Lu Banyak Tod, Hapus Salah Satu Dan Restart Lagi"
+        grup_id = grup.chats[0].id
+    except Exception as e:
+        LOGS.error(str(e))
+        LOGS.warning(
+            "var BOTLOG_CHATID kamu belum di isi. Buatlah grup telegram dan masukan bot @MissRose_bot lalu ketik /id Masukan id grup nya di var BOTLOG_CHATID"
         )
-        exit(1)
-    except BaseException:
-        LOGS.info(
-            "Terjadi kesalahan, Buat sebuah grup lalu isi id nya di config var BOTLOG_CHATID."
-        )
-        exit(1)
-    chat = r.chats[0]
-    channel = get_peer_id(chat)
-    if isinstance(chat.photo, ChatPhotoEmpty):
-        photo = await download_file(
-            "https://telegra.ph/file/05c7982e106962b905ef4.jpg", "photoyins.jpg"
-        )
-        ll = await bot.upload_file(photo)
-        try:
-            await bot(
-                EditPhotoRequest(int(channel), InputChatUploadedPhoto(ll))
-            )
-        except BaseException as er:
-            LOGS.exception(er)
-    if not str(chat.id).startswith("-100"):
-        heroku_var["BOTLOG_CHATID"] = "-100" + str(chat.id)
-    else:
-        heroku_var["BOTLOG_CHATID"] = str(chat.id)
+    if not str(grup_id).startswith("-100"):
+        grup_id = int(f"-100{str(grup_id)}")
+    heroku_var["BOTLOG_CHATID"] = grup_id
 
 
 async def autobot():
@@ -98,15 +56,15 @@ async def autobot():
     await bot.start()
     await asyncio.sleep(15)
     await bot.send_message(
-        BOTLOG_CHATID, "**SABAR KENTOD LAGI BUAT ASSISTANT BOT LU DI @BotFather**"
+        BOTLOG_CHATID, "**SEDANG MEMBUAT BOT TELEGRAM UNTUK ANDA DI @BotFather**"
     )
-    LOGS.info("TUNGGU SEBENTAR TOD. SEDANG MEMBUAT ASSISTANT BOT UNTUK ELU")
+    LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT ASSISTANT BOT UNTUK ANDA")
     who = await bot.get_me()
     name = f"{who.first_name} Assistant Bot"
     if who.username:
-        username = f"{who.username}_bot"
+        username = f"{who.username}_ubot"
     else:
-        username = f"Kazu{(str(who.id))[5:]}bot"
+        username = f"kazu{(str(who.id))[5:]}ubot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -133,19 +91,13 @@ async def autobot():
                 "Silakan buat Bot dari @BotFather dan tambahkan tokennya di var BOT_TOKEN"
             )
             sys.exit(1)
-    filogo = random.choice(
-          [
-              "https://telegra.ph/file/f0383ed4de3a719e2eada.jpg",
-              "AyiinXd/resources/kazu.jpg",
-          ]
-    )
     await bot.send_message(bf, username)
     await asyncio.sleep(1)
     isdone = (await bot.get_messages(bf, limit=1))[0].text
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"Kazu{(str(who.id))[6:]}{str(ran)}bot"
+        username = f"man{(str(who.id))[6:]}{str(ran)}ubot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -161,13 +113,13 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_file(bf, filogo)
+            await bot.send_file(bf, "AyiinXd/resources/kazu.jpg")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_message(bf, f"Managed With ✨ By {who.first_name}")
+            await bot.send_message(bf, f"Managed With ☕️ By {who.first_name}")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setdescription")
             await asyncio.sleep(1)
@@ -178,16 +130,14 @@ async def autobot():
             )
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"**BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}**",
+                f"**BERHASIL MEMBUAT BOT TELEGRAM DENGAN USERNAME @{username}**",
             )
-            LOGS.info(
-                f"BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}")
+            LOGS.info(f"BERHASIL MEMBUAT BOT TELEGRAM DENGAN USERNAME @{username}")
             await bot.send_message(
                 BOTLOG_CHATID,
-                "**SEDANG MERESTART USERBOT HARAP TUNGGU KONTOL.**",
+                "**Tunggu Sebentar, Sedang MeRestart Heroku untuk Menerapkan Perubahan.**",
             )
             heroku_var["BOT_TOKEN"] = token
-            heroku_var["BOT_USERNAME"] = f"@{username}"
         else:
             LOGS.info(
                 "Silakan Hapus Beberapa Bot Telegram Anda di @Botfather atau Set Var BOT_TOKEN dengan token bot"
@@ -205,13 +155,13 @@ async def autobot():
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_file(bf, filogo)
+        await bot.send_file(bf, "AyiinXd/resources/kazu.jpg")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setabouttext")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_message(bf, f"Managed With ✨ By {who.first_name}")
+        await bot.send_message(bf, f"Managed With ☕️ By {who.first_name}")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setdescription")
         await asyncio.sleep(1)
@@ -222,16 +172,14 @@ async def autobot():
         )
         await bot.send_message(
             BOTLOG_CHATID,
-            f"**BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}**",
+            f"**BERHASIL MEMBUAT BOT TELEGRAM DENGAN USERNAME @{username}**",
         )
-        LOGS.info(
-            f"BERHASIL MEMBUAT ASSISTANT BOT DENGAN USERNAME @{username}")
+        LOGS.info(f"BERHASIL MEMBUAT BOT TELEGRAM DENGAN USERNAME @{username}")
         await bot.send_message(
             BOTLOG_CHATID,
-            "**SEDANG MERESTART USERBOT HARAP TUNGGU KONTOL.**",
+            "**Tunggu Sebentar, Sedang MeRestart Heroku untuk Menerapkan Perubahan.**",
         )
         heroku_var["BOT_TOKEN"] = token
-        heroku_var["BOT_USERNAME"] = f"@{username}"
     else:
         LOGS.info(
             "Silakan Hapus Beberapa Bot Telegram Anda di @Botfather atau Set Var BOT_TOKEN dengan token bot"
@@ -244,15 +192,15 @@ def load_module(shortname):
         pass
     elif shortname.endswith("_"):
         path = Path(f"AyiinXd/modules/{shortname}.py")
-        name = "AyiinXd.modules.{}".format(shortname)
+        name = f"AyiinXd.modules.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("Successfully imported " + shortname)
+        LOGS.info(f"Successfully imported {shortname}")
     else:
 
         path = Path(f"AyiinXd/modules/{shortname}.py")
-        name = "AyiinXd.modules.{}".format(shortname)
+        name = f"AyiinXd.modules.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -261,8 +209,8 @@ def load_module(shortname):
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["AyiinXd.modules." + shortname] = mod
-        LOGS.info("Successfully imported " + shortname)
+        sys.modules[f"AyiinXd.modules.{shortname}"] = mod
+        LOGS.info(f"Successfully imported {shortname}")
 
 
 def start_assistant(shortname):
@@ -270,21 +218,21 @@ def start_assistant(shortname):
         pass
     elif shortname.endswith("_"):
         path = Path(f"AyiinXd/modules/assistant/{shortname}.py")
-        name = "AyiinXd.modules.assistant.{}".format(shortname)
+        name = f"AyiinXd.modules.assistant.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Starting Your Assistant Bot.")
-        LOGS.info("Assistant Sucessfully imported " + shortname)
+        LOGS.info(f"Assistant Sucessfully imported {shortname}")
     else:
-        path = Path(f"AyiinXd/modules/assistant/{shortname}.py")
-        name = "AyiinXd.modules.assistant.{}".format(shortname)
+        path = Path(f"AyiinXdt/modules/assistant/{shortname}.py")
+        name = f"AyiinXd.modules.assistant.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["AyiinXd.modules.assistant" + shortname] = mod
-        LOGS.info("Assistant Successfully imported" + shortname)
+        sys.modules[f"userbot.modules.assistant{shortname}"] = mod
+        LOGS.info(f"Assistant Successfully imported{shortname}")
 
 
 def remove_plugin(shortname):
@@ -298,7 +246,7 @@ def remove_plugin(shortname):
             name = f"AyiinXd.modules.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
-                ev, cb = bot._event_builders[i]
+                cb = bot._event_builders[i]
                 if cb.__module__ == name:
                     del bot._event_builders[i]
     except BaseException:
