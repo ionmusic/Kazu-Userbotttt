@@ -843,7 +843,7 @@ tgph_2: "**Successfully uploaded to** [telegra.ph](https://telegra.ph{})"
 tgph_3: "**Please reply to the message, to get a permanent telegraph link.**"
 
 # tempmail tools
-tempmail_1: "**UPUTT TEMPMAIL** ~ `{}`\n\n[CLICK HERE FOR VERIFICATION]({})"
+tempmail_1: "**KAZU TEMPMAIL** ~ `{}`\n\n[CLICK HERE FOR VERIFICATION]({})"
 tempmail_2: "`Sorry, Please Open `@TempMailBot` Then Press Start and Try Again.`"
 
 # tiktok tools
@@ -1001,7 +1001,7 @@ tod_5: "__Getting Dare Tod's Results__\n\n**»** __Dare__ :\n**»** __{}__"
 lang_1: "❏ Please Select The Language You Want To Use.\n╭╼┅━━━━━╍━━━━━┅╾\n├▹ Native Language Indonesia [id]\n╰╼┅━━━━━╍━━━━━┅╾"
 lang_2: "Your language has been set to {} [{}]."
 lang_3: "Language Menu Has Closed."
-lang_4: "❏ Please Choose To Create Your String Session\n╭╼┅━━━━━╍━━━━━┅╾\n├▹ Bot To Create in bot [StringUputt]\n├▹ Replit To Create On The Web [StringUputt]\n╰╼┅━━━━━╍━━━━━┅╾"
+lang_4: "❏ Please Choose To Create Your String Session\n╭╼┅━━━━━╍━━━━━┅╾\n├▹ Bot To Create in bot [kazu_stringbot]\n├▹ Replit To Create On The Web [StringKazu]\n╰╼┅━━━━━╍━━━━━┅╾"
 
 # yiinstoxic tools
 yitxc_1: "**BACOT NGENTOTTT!! YOUR FATHER SAYS A COMFORT WITH ME**"
@@ -1181,7 +1181,7 @@ yibot_76: "**Ayuukk Picies Yang 🤤**"
 yibot_77: "**Hi... Introduce My Name Uputt**"
 yibot_78: "**19 years old...**"
 yibot_79: "**Stay in Batam...**"
-yibot_80: "**Owner From [Uputt-Userbot](https://github.com/iamuput/Uputt-Userbot)... Nice to meet you** 😁"
+yibot_80: "**Owner From [Kazu-Userbot](https://github.com/ionmusic/Kazu-Userbot)... Nice to meet you** 😁"
 yibot_81: "**I just want to say...**"
 yibot_82: "**I love you Mwaahh** 😘❤"
 yibot_83: "**Whatever happens...**"
