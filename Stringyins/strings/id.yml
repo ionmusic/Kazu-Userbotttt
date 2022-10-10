@@ -362,7 +362,7 @@ gban_2: "`Pemrosesan larangan global...`"
 gban_3: "`𖣘 Larangan Global Akan Aktif...`"
 gban_4: "**Maaf Telah Terjadi Kesalahan :(**"
 gban_5: "**Apakah Anda Gila ?.. Dia Adalah Developer Kazu-Userbot 🤪**"
-gban_6: "**Apakah Anda Gila ?... Dia Adalah Admin dari @fluxinhere 🤪**"
+gban_6: "**Apakah Anda Gila ?... Dia Adalah Admin dari @kazusupportgrp 🤪**"
 gban_7: "**\\#𝙂𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧//**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{}](tg://user?id={})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝙂𝙡𝙤𝙗𝙖𝙡 𝘽𝙖𝙣𝙣𝙚𝙙`"
 gban_8: "**Mohon Balas Ke Pesan Penggunanya**"
 gban_10: "**\\#𝙂𝘽𝙖𝙣𝙣𝙚𝙙_𝙐𝙨𝙚𝙧//**\n\n**𝙁𝙞𝙧𝙨𝙩 𝙉𝙖𝙢𝙚 :** [{}](tg://user?id={})\n**𝙐𝙨𝙚𝙧 𝙄𝘿 :** `{}`\n**𝘼𝙘𝙩𝙞𝙤𝙣 :** `𝙂𝙡𝙤𝙗𝙖𝙡 𝘽𝙖𝙣𝙣𝙚𝙙`\n**𝙂𝙗𝙖𝙣𝙣𝙚𝙙 𝘽𝙮 :** `{}`\n**𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 : ✧ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**"
@@ -437,7 +437,7 @@ hzmt_3: "`Perintah Hazmat Diaktifkan, Sedang Memproses...`"
 hzmt_4: "`Mohon Maaf, GIF Tidak Bisa...`"
 
 # helper tools
-hlpr_1: "**Hai {} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `{}help` Atau Bisa Minta Bantuan Ke:\n⍟ **Group Support :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](t.me/fluxinhere)\n⍟ **Channel Kazu :** [𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](t.me/punyaionnibos)\n⍟ **Owner Repo :** [Kazu](t.me/disinikazu)\n⍟ **Repo :** [𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://github.com/ionmusic/Kazu-Userbot)\n"
+hlpr_1: "**Hai {} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `{}help` Atau Bisa Minta Bantuan Ke:\n⍟ **Group Support :** [𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](t.me/kazusupportgrp)\n⍟ **Channel Kazu :** [𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](t.me/punyaionnibos)\n⍟ **Owner Repo :** [Kazu](t.me/disinikazu)\n⍟ **Repo :** [𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://github.com/ionmusic/Kazu-Userbot)\n"
 hlpr_2: "**Daftar Lengkap Vars Dari 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃:** [KLIK DISINI](https://telegra.ph/List-Variable-Heroku-Untuk-𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃-02-08)"
 
 # hentai tools
@@ -536,7 +536,7 @@ shtdwn_2: "**᯽ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di m
 rstrt_1: "**᯽ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil di Restart**"
 rstrt_2: "#RESTART \n**᯽ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ᯽ Berhasil Di Restart**"
 rdme_1: "**Berikut sesuatu untuk kamu baca:**\n\n✣ [Userbot Repo](https://github.com/ionmusic/Kazu-Userbot/blob/KazuUBot/README.md)\n✣ [Video Tutorial](https://youtu.be/tTDaPKsGC1I)\n✣ [List Variabel Heroku untuk Kazu-Userbot](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)\n✣ [Setup Guide - Basic](https://mrismanaziz.medium.com/cara-memasang-userbot-telegram-repo-man-userbot-deploy-di-heroku-c56d1f8b5537)\n✣ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
-repo_1: "**Hey**, Saya Pengguna **✧ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧** \n卍━━━━━━━━━━━━━━━━━卍\n➣ **𝚁𝙴𝙿𝙾 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 :** [𝙶𝙸𝚃𝙷𝚄𝙱](https://github.com/ionmusic/Kazu-Userbot)\n➣ **𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃       :** [𝙺𝙰𝚉𝚄](t.me/disinikazu)\n卍━━━━━━━━━━━━━━━━━卍\n➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙶𝚁𝙾𝚄𝙿](https://t.me/fluxinhere)\n➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/punyaionnibos)\n卍━━━━━━━━━━━━━━━━━卍\n"
+repo_1: "**Hey**, Saya Pengguna **✧ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧** \n卍━━━━━━━━━━━━━━━━━卍\n➣ **𝚁𝙴𝙿𝙾 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 :** [𝙶𝙸𝚃𝙷𝚄𝙱](https://github.com/ionmusic/Kazu-Userbot)\n➣ **𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃       :** [𝙺𝙰𝚉𝚄](t.me/disinikazu)\n卍━━━━━━━━━━━━━━━━━卍\n➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙶𝚁𝙾𝚄𝙿](https://t.me/kazusupportgrp)\n➣ **𝚂𝚄𝙿𝙿𝙾𝚁𝚃           :** [𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/punyaionnibos)\n卍━━━━━━━━━━━━━━━━━卍\n"
 raw_1: "**Periksa log userbot untuk data pesan yang didekodekan !!`"
 raw_2: "**Inilah data pesan yang didecodekan !!**"
 rvrse_1: "`Gambar berhasil diunggah ke Google. Mungkin.`\n`Mengurai sumber sekarang. Mungkin.`"
