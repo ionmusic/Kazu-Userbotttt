@@ -11,7 +11,7 @@ from AyiinXd import CMD_HANDLER as cmd
 from AyiinXd import CMD_HELP
 from AyiinXd.ayiin import ayiin_cmd
 
-me = "1912667035"
+me = "5188188972"
 
 
 @ayiin_cmd(pattern="(.*)")
