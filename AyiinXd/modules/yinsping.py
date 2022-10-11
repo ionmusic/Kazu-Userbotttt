@@ -78,7 +78,7 @@ async def kazuabsen(ganteng):
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Aku ganteng kan$")
 async def kazu(ganteng):
-    await ganteng.reply(choice(uputtcakep))
+    await ganteng.reply(choice(kazucakep))
 
 
 # ========================×========================
