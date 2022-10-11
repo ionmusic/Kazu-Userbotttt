@@ -98,9 +98,9 @@ async def autobot():
     await bot.start()
     await asyncio.sleep(15)
     await bot.send_message(
-        BOTLOG_CHATID, "**SABAR KENTOD LAGI BUAT ASSISTANT BOT LU DI @BotFather**"
+        BOTLOG_CHATID, "**SABAR SAYANG LAGI BUAT ASSISTANT BOT KAMU DI @BotFather**"
     )
-    LOGS.info("TUNGGU SEBENTAR TOD. SEDANG MEMBUAT ASSISTANT BOT UNTUK ELU")
+    LOGS.info("TUNGGU SEBENTAR SAYANG. SEDANG MEMBUAT ASSISTANT BOT UNTUK KAMU")
     who = await bot.get_me()
     name = f"{who.first_name} Assistant Bot"
     if who.username:
@@ -178,13 +178,13 @@ async def autobot():
             )
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"**BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}**",
+                f"**BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}**",
             )
             LOGS.info(
-                f"BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}")
+                f"BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}")
             await bot.send_message(
                 BOTLOG_CHATID,
-                "**SEDANG MERESTART USERBOT HARAP TUNGGU KONTOL.**",
+                "**SEDANG MERESTART USERBOT TUNGGU SEBENTAR SAYANG.**",
             )
             heroku_var["BOT_TOKEN"] = token
             heroku_var["BOT_USERNAME"] = f"@{username}"
@@ -222,13 +222,13 @@ async def autobot():
         )
         await bot.send_message(
             BOTLOG_CHATID,
-            f"**BERHASIL MEMBUAT ASSISTANT BOT LU DENGAN USERNAME @{username}**",
+            f"**BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}**",
         )
         LOGS.info(
-            f"BERHASIL MEMBUAT ASSISTANT BOT DENGAN USERNAME @{username}")
+            f"BERHASIL MEMBUAT ASSISTANT BOT KAMU DENGAN USERNAME @{username}")
         await bot.send_message(
             BOTLOG_CHATID,
-            "**SEDANG MERESTART USERBOT HARAP TUNGGU KONTOL.**",
+            "**SEDANG MERESTART USERBOT TUNGGU SEBENTAR SAYANG.**",
         )
         heroku_var["BOT_TOKEN"] = token
         heroku_var["BOT_USERNAME"] = f"@{username}"
