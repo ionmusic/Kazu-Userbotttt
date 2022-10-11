@@ -1,11 +1,11 @@
 <h1 align="center"> ⚡ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃</h1>
 
 <a href="https://github.com/ionmusic/Kazu-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/sip-Userbot/Nande-Telethon?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ionmusic/KazuUBot)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://github.com/ionmusic/KazuUBot/graphs/commit-activity)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ionmusic/Kazu-Userbot)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://github.com/ionmusic/Kazu-Userbot/graphs/commit-activity)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/ionmusic/Kazu-Userbot/dashboard)
-[![GitHub Forks](https://img.shields.io/github/forks/ionmusic/KazuUBot?&logo=github)](https://github.com/ionmusic/KazuUBot/fork)
-[![GitHub Stars](https://img.shields.io/github/stars/ionmusic/KazuUBot?&logo=github)](https://github.com/ionmusic/KazuUBot/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/ionmusic/Kazu-Userbot?&logo=github)](https://github.com/ionmusic/Kazu-Userbot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/ionmusic/Kazu-Userbot?&logo=github)](https://github.com/ionmusic/Kazu-Userbot/stargazers)
 
 
 <p align="center">
