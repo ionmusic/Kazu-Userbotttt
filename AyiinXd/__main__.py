@@ -32,9 +32,7 @@ try:
         imported_module = import_module(f"AyiinXd.modules.{module_name}")
     adB = AyiinDB()
     client = multiayiin()
-    total = 10 - client
     git()
-    LOGS.info(f"Total Clients = {total} User")
     LOGS.info(f"Python Version - {python_version()}")
     LOGS.info(f"Telethon Version - {version.__version__} [Layer: {LAYER}]")
     LOGS.info(f"PyTgCalls Version - {pytgcalls}")
