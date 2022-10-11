@@ -87,7 +87,7 @@ Selamat bersenang-senang.
 
 ## Updates & Support
 
-Follow Channel [@punyaionnibos](https://t.me/punyaionnibos) untuk info Update bot dan Gabung Group [@fluxinhere](https://t.me/kazusupportgrp) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Kazu-Userbot.
+Follow Channel [@punyaionnibos](https://t.me/punyaionnibos) untuk info Update bot dan Gabung Group [@KazuSupport](https://t.me/kazusupportgrp) untuk untuk diskusi, pelaporan bug, dan bantuan tentang Kazu-Userbot.
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/Man-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [AdekMaulana](https://github.com/adekmaulana) : ProjectBish
