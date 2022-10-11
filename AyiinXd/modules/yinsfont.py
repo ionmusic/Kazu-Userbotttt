@@ -468,7 +468,7 @@ async def font_yins(ayiin):
         return await edit_delete(ayiin, "`Ngetik Yang Bener Bego...`")
 
     await ayiin.edit(f"{kontol}")
-    await ayiin.reply("**𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙚𝙙 𝘽𝙮 :** ✧ 𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧")
+    await ayiin.reply("**𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙚𝙙 𝘽𝙮 :** ✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧")
 
 
 # ========================×========================
@@ -587,20 +587,20 @@ async def fonts(yins):
     ayiin = await edit_or_reply(yins,
                                 "**»» ᴅᴀғᴛᴀʀ ғᴏɴᴛs ««**\n"
                                 "**         ☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎︎☟︎︎**\n\n\n"
-                                "**• smallcap » ᴜᴘᴜᴛᴛ**\n"
-                                "**• monospace » 𝚄𝙿𝚄𝚃𝚃**\n"
-                                "**• outline » 𝕌ℙ𝕌𝕋𝕋**\n"
-                                "**• script » 𝓤𝓟𝓤𝓣𝓣**\n"
-                                "**• blackbubbles » 🅤🅟🅤🅣🅣**\n"
-                                "**• bubbles » ⓊⓅⓊⓉⓉ**\n"
-                                "**• bold » 𝗨𝗣𝗨𝗧𝗧**\n"
-                                "**• bolditalic » 𝙐𝙋𝙐𝙏𝙏**\n\n"
-                                "**   ✧ 𝚄𝙿𝚄𝚃𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**")
+                                "**• smallcap » ᴋᴀᴢᴜ**\n"
+                                "**• monospace » 𝙺𝙰𝚉𝚄**\n"
+                                "**• outline » 𝕂𝔸ℤ𝕌**\n"
+                                "**• script » 𝒦𝒜𝒵𝒰**\n"
+                                "**• blackbubbles » ⓀⒶⓏⓊ**\n"
+                                "**• bubbles » ⓀⒶⓏⓊ**\n"
+                                "**• bold » 𝗞𝗔𝗭𝗨**\n"
+                                "**• bolditalic » 𝙆𝘼𝙕𝙐**\n\n"
+                                "**   ✧ 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**")
 
 
 CMD_HELP.update(
     {
-        "yinsfont": f"**Plugin : **`uputtfont`\
+        "yinsfont": f"**Plugin : **`kazufont`\
         \n\n  »  **Perintah :** `{cmd}font` `<nama font>` `<teks/balas ke pesan>`\
         \n  »  **Kegunaan : **Membuat Text dengan Fonts Style.\
         \n\n  »  **Perintah :** `{cmd}lf`\
