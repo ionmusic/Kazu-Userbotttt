@@ -123,7 +123,7 @@ async def _(pong):
 # .keping & kping Coded by Koala
 
 
-@ayiin_cmd(pattern=r"uput$")
+@ayiin_cmd(pattern=r"kazu$")
 async def _(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -202,7 +202,7 @@ async def _(pong):
 CMD_HELP.update(
     {
         "ping": f"**Plugin : **`ping`\
-        \n\n  »  **Perintah :** `{cmd}ping` ; `{cmd}lping` ; `{cmd}xping` ; `{cmd}uput`\
+        \n\n  »  **Perintah :** `{cmd}ping` ; `{cmd}lping` ; `{cmd}xping` ; `{cmd}kazu`\
         \n  »  **Kegunaan : **Untuk menunjukkan ping userbot.\
         \n\n  »  **Perintah :** `{cmd}pong`\
         \n  »  **Kegunaan : **Sama seperti perintah ping\
