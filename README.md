@@ -103,6 +103,7 @@ Follow Channel [@punyaionnibos](https://t.me/punyaionnibos) untuk info Update bo
 -  [sip-Userbot](https://github.com/sip-Userbot/Nande-Telethon): Nande-Telethon
 -  [IamUput](https://github.com/iamuput/Uputt-Userbot): Uputt-Userbot
 -  [ionmusic](https://github.com/ionmusic/Kazu-Userbot) : Kazu-Userbot
+-  [ArmanGG01](https://github.com/ArmanGG01/KARMAN-USERBOT) : KARMAN-USERBOT
 
 ## © Credits
 -  [MarshalX](https://github.com/MarshalX) for [PyTgcalls](https://github.com/MarshalX/tgcalls)
