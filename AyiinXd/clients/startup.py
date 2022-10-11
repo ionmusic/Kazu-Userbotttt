@@ -71,6 +71,6 @@ def multiayiin():
         except Exception as e:
             LOGS.info(str(e))
 
-    if not STRING_SESSION:
-        failed += 1
-    return failed
+    #if not STRING_SESSION:
+    #    failed += 1
+    #return failed
