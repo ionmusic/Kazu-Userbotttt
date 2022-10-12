@@ -579,7 +579,7 @@ with bot:
                 result = builder.article(
                     title="Repository",
                     description="Repository 𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
-                    url="https://t.me/uputtsupport",
+                    url="https://t.me/kazusupportgrp",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
