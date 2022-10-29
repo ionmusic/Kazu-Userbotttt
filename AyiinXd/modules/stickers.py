@@ -42,11 +42,11 @@ from AyiinXd.ayiin.misc import animator, create_quotly
 from Stringyins import get_string
 
 KANGING_STR = [
-    "Gua Ijin Maling Sticker Lu Tod...",
-    "Ini Sticker Gua Curi Ya Tod Yahaha!",
-    "Waw Sticker Lu Bagus Nih Tod...",
-    "Ehh, Keren Nih Tod... Gua Ambil Ya...",
-    "Sticker Lu Keren Anjing.. Gua Minta Ya~",
+    "Gua Ijin Maling Sticker Lu Kids...",
+    "Ini Sticker Gua Curi Ya Kids Yahaha!",
+    "Waw Sticker Lu Bagus Nih Kids...",
+    "Ehh, Keren Nih Kids... Gua Ambil Ya...",
+    "Sticker Lu Keren Kids.. Gua Minta Ya~",
 ]
 
 
