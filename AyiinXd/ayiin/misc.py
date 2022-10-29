@@ -149,7 +149,7 @@ async def _format_quote(event, reply=None, sender=None, type_="private"):
     return message
 
 
-O_API = "https://bot.lyo.su/quote/generate"
+O_API = "aHR0cHM6Ly9ib3QubHlvLnN1L3F1b3RlL2dlbmVyYXRl"
 
 
 async def create_quotly(
@@ -200,7 +200,7 @@ async def create_quotly(
 async def Carbon(
     code,
     base_url="https://carbonara-42.herokuapp.com/api/cook",
-    file_name="Ayiin-Userbot",
+    file_name="Kazu-Userbot",
     **kwargs,
 ):
     kwargs["code"] = code
