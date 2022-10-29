@@ -149,7 +149,7 @@ async def _format_quote(event, reply=None, sender=None, type_="private"):
     return message
 
 
-O_API = "aHR0cHM6Ly9ib3QubHlvLnN1L3F1b3RlL2dlbmVyYXRl"
+O_API = "https://bot.lyo.su/quote/generate"
 
 
 async def create_quotly(
