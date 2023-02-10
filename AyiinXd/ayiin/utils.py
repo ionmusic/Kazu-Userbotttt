@@ -58,7 +58,7 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="𝙺𝙰𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 Lᴏɢs",
+                title="K𝙰𝚉𝚄-U𝚂𝙴𝚁𝙱𝙾𝚃 Lᴏɢs",
                 about="» Group log Created by: Kazu Userbot\n\n» Support : @kazusupportgrp\n» Support: @punyaionnibos",
                 megagroup=True,
             ),
@@ -174,7 +174,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @punyaionnibos ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Html12text ✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
