@@ -133,7 +133,8 @@ BLACKLIST_GCAST = {
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001608701614,
-                     -1001726206158, -1001287188817, -1001638078842]
+                     -1001726206158, -1001287188817, -1001638078842,
+                     -1001692751821, -1001459812644]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -159,7 +160,7 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
 GROUP = os.environ.get("GROUP", "kazusupportgrp")
-CHANNEL = os.environ.get("CHANNEL", "punyaionnibos")
+CHANNEL = os.environ.get("CHANNEL", "Html12text")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
