@@ -46,6 +46,7 @@ GCAST_BLACKLIST = [
     -1001726206158,  # Nandesupport
     -1001608701614,  # Uputtsupport
     -1001578091827,  # PrimeSupport
+    -1001599474353,  # HimikoSupport
     -1001287188817,  # KazuSupportGrp
     -1001302879778,  # KarmanSupport
     -1001638078842,  # RuangDiskusi
