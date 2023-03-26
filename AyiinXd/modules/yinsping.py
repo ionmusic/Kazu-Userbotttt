@@ -75,6 +75,9 @@ async def _(ping):
 async def kazuabsen(ganteng):
     await ganteng.reply(choice(absen))
 
+@register(incoming=True, from_users=DEVS, pattern=r"^Naya$")
+async def naya(naya):
+    await naya.reply("**Naya Punya Nya Kynan**🤩")
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Aku ganteng kan$")
 async def kazu(ganteng):
