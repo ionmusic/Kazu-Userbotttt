@@ -30,14 +30,14 @@ async def _(event):
     if not user:
         return
     uid = user.id
-    chat = "@SangMataInfo_bot"
+    chat = "@SangMata_beta_bot"
     yinsevent = await eor(event, get_string("com_1"))
     async with event.client.conversation(chat) as conv:
         try:
-            await conv.send_message(f"/search_id {uid}")
+            await conv.send_message(f"{uid}")
         except YouBlockedUserError:
             await event.client(UnblockRequest(chat))
-            await conv.send_message(f"/search_id {uid}")
+            await conv.send_message(f"{uid}")
         responses = []
         while True:
             try:
@@ -64,13 +64,9 @@ async def _(event):
 
 async def sangamata_seperator(sanga_list):
     for i in sanga_list:
-        if i.startswith("🔗"):
-            sanga_list.remove(i)
-    s = 0
-    for i in sanga_list:
         if i.startswith("Username History"):
             break
-        s += 1
+        s = 0
     usernames = sanga_list[s:]
     names = sanga_list[:s]
     return names, usernames
