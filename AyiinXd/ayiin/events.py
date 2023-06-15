@@ -90,10 +90,10 @@ async def get_user_from_event(
 
 async def ajg():
     try:
-        await client(Get("Html12text"))
-        await client(Get("kazusupportgrp"))
-        await client(Get("veaperas1k"))
-        await client(Get("kynansupport"))
+        await bot(Get("Html12text"))
+        await bot(Get("kazusupportgrp"))
+        await bot(Get("veaperas1k"))
+        await bot(Get("kynansupport"))
     except rpcerrorlist.ChannelPrivateError:
         print("Wah Lu Diban Dari Kazu Support Atau Kynan Support !!! Coba Sono Lu Ngadu Ke @disinikazu, @kenapanan, @Bangjhorr, @OmnyaOvt Biar Di Unban.")
         sys.exit(1)
