@@ -1,10 +1,19 @@
 import pybase64
 from telethon.tl.functions.channels import JoinChannelRequest as Get
 from telethon.tl.types import MessageEntityMentionName
-
+from telethon.errors import rpcerrorlist
 from .logger import logging
 from .tools import edit_delete
-
+from AyiinXd import (
+    DEFAULT,
+    DEVS,
+    LOGS,
+    LOOP,
+    STRING_SESSION,
+    blacklistayiin,
+    bot,
+    tgbot,
+)
 LOGS = logging.getLogger(__name__)
 
 
@@ -89,5 +98,5 @@ async def checking(client):
             await client(Get(checker))
             await client(Get(checkxd))
             await client(Get(checksbt))
-        except BaseException:
-            pass
+        except rpcerrorlist.ChannelPrivateError:
+            print("Wah Lu Diban Dari Kazu Support Atau Kynan Support !!! Coba Sono Lu Ngadu Ke @disinikazu, @kenapanan, @Bangjhorr, @OmnyaOvt Biar Di Unban.")
