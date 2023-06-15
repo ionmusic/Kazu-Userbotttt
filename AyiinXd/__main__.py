@@ -26,7 +26,7 @@ from AyiinXd.clients import ayiin_userbot_on, multiayiin
 from AyiinXd.core.git import git
 from AyiinXd.modules import ALL_MODULES
 from AyiinXd.ayiin import AyiinDB, HOSTED_ON, autobot, autopilot, ayiin_version
-from AyiinXd.ayiin import checking
+
 
 try:
     for module_name in ALL_MODULES:
@@ -48,7 +48,6 @@ except BaseException as e:
 
 
 LOOP.run_until_complete(ayiin_userbot_on())
-LOOP.run_until_complete(checking(bot))
 if not BOTLOG_CHATID:
     LOOP.run_until_complete(autopilot())
 if not BOT_TOKEN:
