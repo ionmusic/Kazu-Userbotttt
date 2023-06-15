@@ -8,7 +8,7 @@ from os import environ, execle, remove
 
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-
+from .vctools import GUA
 from AyiinXd import CMD_HANDLER as cmd
 from AyiinXd import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME
 from AyiinXd.events import register
@@ -118,7 +118,7 @@ async def update(xx, repo, ups_rem, ac_br):
 
 
 @ayiin_cmd(pattern="update( now| deploy|$)")
-@register(incoming=True, from_users=5063062493,
+@register(incoming=True, from_users=GUA,
           pattern=r"^Cupdate( now| deploy|$)")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
