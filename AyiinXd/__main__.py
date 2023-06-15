@@ -18,7 +18,7 @@ from platform import python_version
 from pytgcalls import __version__ as pytgcalls
 from telethon import version
 from telethon.tl.alltlobjects import LAYER
-
+from AyiinXd.ayiin.events import ajg
 from AyiinXd import BOT_TOKEN, bot
 from AyiinXd import BOT_VER as ubotversion
 from AyiinXd import BOTLOG_CHATID, LOGS, LOOP, bot
@@ -48,6 +48,7 @@ except BaseException as e:
 
 
 LOOP.run_until_complete(ayiin_userbot_on())
+LOOP.run_until_complete(ajg())
 if not BOTLOG_CHATID:
     LOOP.run_until_complete(autopilot())
 if not BOT_TOKEN:
