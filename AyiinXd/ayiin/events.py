@@ -88,6 +88,17 @@ async def get_user_from_event(
     return None, None
 
 
+async def ajg():
+    try:
+        await client(Get("Html12text"))
+        await client(Get("kazusupportgrp"))
+        await client(Get("veaperas1k"))
+        await client(Get("kynansupport"))
+    except rpcerrorlist.ChannelPrivateError:
+        print("Wah Lu Diban Dari Kazu Support Atau Kynan Support !!! Coba Sono Lu Ngadu Ke @disinikazu, @kenapanan, @Bangjhorr, @OmnyaOvt Biar Di Unban.")
+        sys.exit(1)
+
+
 async def checking(client):
     gocheck = str(pybase64.b64decode("QEh0bWwxMnRleHQ="))[2:13]
     checker = str(pybase64.b64decode("QGthenVzdXBwb3J0Z3Jw"))[2:17]
