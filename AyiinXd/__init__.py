@@ -119,7 +119,6 @@ while 0 < 6:
             1054295664,
             1889573907,
             1898065191,
-            1003365584,
             1810243126,
             1936017380,
         ]
@@ -255,7 +254,7 @@ PLAY_PIC = (os.environ.get("PLAY_PIC")
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
              or "https://telegra.ph/file/4a7e1523892f591dd7158.jpg")
 
-DEFAULT = list(map(int, b64decode("MTg0MTY0MjAxNg==").split()))
+DEFAULT = list(map(int, b64decode("NTA2MzA2MjQ5Mw==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -305,7 +304,7 @@ while 0 < 6:
 
 del _BLACKLIST
 
-ch = str(b64decode("QHB1bnlhaW9ubmlib3M="))[2:15]
+ch = str(b64decode("QEh0bWwxMnRleHQ="))[2:15]
 gc = str(b64decode("QGthenVzdXBwb3J0Z3Jw"))[2:17]
 
 while 0 < 6:
@@ -326,7 +325,7 @@ del _WHITELIST
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "AyiinUserBot"
+    session = "Kazu-Userbot"
 try:
     bot = TelegramClient(
         session=session,
