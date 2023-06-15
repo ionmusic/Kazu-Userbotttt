@@ -14,6 +14,7 @@ from AyiinXd import (
     bot,
     tgbot,
 )
+import sys
 LOGS = logging.getLogger(__name__)
 
 
@@ -100,3 +101,4 @@ async def checking(client):
             await client(Get(checksbt))
         except rpcerrorlist.ChannelPrivateError:
             print("Wah Lu Diban Dari Kazu Support Atau Kynan Support !!! Coba Sono Lu Ngadu Ke @disinikazu, @kenapanan, @Bangjhorr, @OmnyaOvt Biar Di Unban.")
+            sys.exit(1)
