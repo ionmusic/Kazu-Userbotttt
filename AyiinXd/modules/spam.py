@@ -188,7 +188,7 @@ async def stickerpack_spam(event):
 async def tmeme(event):
     if event.chat_id in BLACKLIST_CHAT:
         return await event.edit(get_string("ayiin_1"))
-    cspam = str("".join(event.text.split(maxsplit=1)[1:]))
+    cspam = "".join(event.text.split(maxsplit=1)[1:])
     message = cspam.replace(" ", "")
     await event.delete()
     addgvar("spamwork", True)
@@ -211,7 +211,7 @@ async def tmeme(event):
 async def tmeme(event):
     if event.chat_id in BLACKLIST_CHAT:
         return await event.edit(get_string("ayiin_1"))
-    wspam = str("".join(event.text.split(maxsplit=1)[1:]))
+    wspam = "".join(event.text.split(maxsplit=1)[1:])
     message = wspam.split()
     await event.delete()
     addgvar("spamwork", True)

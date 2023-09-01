@@ -103,9 +103,7 @@ async def _(event):
         input_str = input_str.replace("#", "")
     try:
         sql.rm_note(input_str)
-        await edit_or_reply(
-            event, "**Berhasil menghapus custom:** `#{}`".format(input_str)
-        )
+        await edit_or_reply(event, f"**Berhasil menghapus custom:** `#{input_str}`")
     except BaseException:
         await edit_or_reply(event, "Tidak ada snip yang disimpan dengan pemicu ini.")
 

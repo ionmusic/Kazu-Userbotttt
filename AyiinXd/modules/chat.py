@@ -54,15 +54,15 @@ async def useridgetter(target):
         if not message.forward:
             user_id = message.sender.id
             if message.sender.username:
-                name = "@" + message.sender.username
+                name = f"@{message.sender.username}"
             else:
-                name = "**" + message.sender.first_name + "**"
+                name = f"**{message.sender.first_name}**"
         else:
             user_id = message.forward.sender.id
             if message.forward.sender.username:
-                name = "@" + message.forward.sender.username
+                name = f"@{message.forward.sender.username}"
             else:
-                name = "*" + message.forward.sender.first_name + "*"
+                name = f"*{message.forward.sender.first_name}*"
         await eor(target, get_string("chat_1").format(name, user_id))
 
 
@@ -101,13 +101,11 @@ async def _(event):
             chat, filter=ChannelParticipantsBots
         ):
             if isinstance(x.participant, ChannelParticipantAdmin):
-                mentions += "\n 👑 [{}](tg://user?id={}) `{}`".format(
-                    x.first_name, x.id, x.id)
+                mentions += f"\n 👑 [{x.first_name}](tg://user?id={x.id}) `{x.id}`"
             else:
-                mentions += "\n ⚜️ [{}](tg://user?id={}) `{}`".format(
-                    x.first_name, x.id, x.id)
+                mentions += f"\n ⚜️ [{x.first_name}](tg://user?id={x.id}) `{x.id}`"
     except Exception as e:
-        mentions += " " + str(e) + "\n"
+        mentions += f" {str(e)}" + "\n"
     await eor(event, mentions)
 
 
@@ -281,9 +279,8 @@ async def fetch_info(chat, event):
         if hasattr(chat_obj_info, "verified") and chat_obj_info.verified
         else "Tidak"
     )
-    username = "@{}".format(username) if username else None
-    creator_username = "@{}".format(
-        creator_username) if creator_username else None
+    username = f"@{username}" if username else None
+    creator_username = f"@{creator_username}" if creator_username else None
 
     if admins is None:
         try:

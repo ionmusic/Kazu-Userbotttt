@@ -28,8 +28,7 @@ from Stringyins import get_string
 async def helpyins(event):
     if event.fwd_from:
         return
-    args = event.pattern_match.group(1).lower()
-    if args:
+    if args := event.pattern_match.group(1).lower():
         if args in CMD_HELP:
             await eor(event, get_string("help_5").format(CMD_HELP[args], ch))
         else:

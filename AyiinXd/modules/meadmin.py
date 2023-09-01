@@ -30,10 +30,7 @@ async def _(event):
                     admin_list.append(info)
             except BaseException:
                 pass
-            except Exception:
-                continue
-
-    if len(admin_list) > 0:
+    if admin_list:
         await xnxx.edit('`Berhasil, Sedang Membuat File 🖨️`')
         with open('list_admin.txt', 'w') as book:
             for groups_channels in admin_list:

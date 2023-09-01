@@ -90,7 +90,7 @@ weebyfont = [
 
 
 logger = logging.getLogger(__name__)
-thumb_image_path = TEMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
+thumb_image_path = f"{TEMP_DOWNLOAD_DIRECTORY}/thumb_image.jpg"
 name = "Profile Photos"
 
 
@@ -102,7 +102,7 @@ async def apk(e):
         remove_space = app_name.split(" ")
         final_name = "+".join(remove_space)
         page = requests.get(
-            "https://play.google.com/store/search?q=" + final_name + "&c=apps"
+            f"https://play.google.com/store/search?q={final_name}&c=apps"
         )
         str(page.status_code)
         soup = bs4.BeautifulSoup(page.content, "lxml", from_encoding="utf-8")
@@ -142,8 +142,8 @@ async def apk(e):
             .findNext("div", "uzcko")
             .img["data-src"]
         )
-        app_details = "<a href='" + app_icon + "'>📲&#8203;</a>"
-        app_details += "<b>" + app_name + "</b>"
+        app_details = f"<a href='{app_icon}'>📲&#8203;</a>"
+        app_details += f"<b>{app_name}</b>"
         app_details += ("\n\n<b>Developer :</b> <a href='" +
                         app_dev_link + "'>" + app_dev + "</a>")
         app_details += "\n<b>Rating :</b> " + app_rating.replace(
@@ -161,7 +161,7 @@ async def apk(e):
         await eor(xx, get_string("appmis_1"), time=20
                   )
     except Exception as err:
-        await eod(xx, "Exception Occured:- " + str(err))
+        await eod(xx, f"Exception Occured:- {str(err)}")
 
 
 @ayiin_cmd(pattern="calc(?: |$)(.*)")
@@ -169,7 +169,7 @@ async def _(event):
     if event.fwd_from:
         return
     input = event.pattern_match.group(1)  # get input
-    exp = "Given expression is " + input  # report back input
+    exp = f"Given expression is {input}"
     xx = await eor(event, get_string("com_1"))
     # lazy workaround to add support for two digits
     final_input = tuple(input)
@@ -222,14 +222,14 @@ async def _(event):
     if xkcd_id is None:
         xkcd_url = "https://xkcd.com/info.0.json"
     else:
-        xkcd_url = "https://xkcd.com/{}/info.0.json".format(xkcd_id)
+        xkcd_url = f"https://xkcd.com/{xkcd_id}/info.0.json"
     r = requests.get(xkcd_url)
     if r.ok:
         data = r.json()
         year = data.get("year")
         month = data["month"].zfill(2)
         day = data["day"].zfill(2)
-        xkcd_link = "https://xkcd.com/{}".format(data.get("num"))
+        xkcd_link = f'https://xkcd.com/{data.get("num")}'
         safe_title = data.get("safe_title")
         data.get("transcript")
         alt = data.get("alt")
@@ -246,7 +246,7 @@ Year: {}""".format(
         )
         await xx.edit(output_str, link_preview=True)
     else:
-        await eor(xx, "xkcd n.{} not found!".format(xkcd_id))
+        await eor(xx, f"xkcd n.{xkcd_id} not found!")
 
 
 @ayiin_cmd(pattern="remove(?: |$)(.*)", allow_sudo=False)
@@ -454,7 +454,7 @@ async def potocmd(event):
         photos = await event.client.get_profile_photos(user.sender)
     else:
         photos = await event.client.get_profile_photos(chat)
-    if id.strip() == "":
+    if not id.strip():
         try:
             await event.client.send_file(event.chat_id, photos)
         except a:
@@ -468,7 +468,7 @@ async def potocmd(event):
                                  )
         except BaseException:
             return await eod(xx, "**Lmao**")
-        if int(id) <= (len(photos)):
+        if id <= (len(photos)):
             send_photos = await event.client.download_media(photos[id - 1])
             await event.client.send_file(event.chat_id, send_photos)
             await xx.delete()
@@ -507,8 +507,6 @@ async def _(event):
 
 
 def get_stream_data(query):
-    stream_data = {}
-
     # Compatibility for Current Userge Users
     try:
         country = Config.WATCH_COUNTRY
@@ -519,12 +517,12 @@ def get_stream_data(query):
     just_watch = JustWatch(country=country)
     results = just_watch.search_for_item(query=query)
     movie = results["items"][0]
-    stream_data["title"] = movie["title"]
-    stream_data["movie_thumb"] = (
-        "https://images.justwatch.com"
+    stream_data = {
+        "title": movie["title"],
+        "movie_thumb": "https://images.justwatch.com"
         + movie["poster"].replace("{profile}", "")
-        + "s592"
-    )
+        + "s592",
+    }
     stream_data["release_year"] = movie["original_release_year"]
     try:
         print(movie["cinema_release_date"])
@@ -598,9 +596,9 @@ async def _(event):
         release_date = release_year
     output_ = f"**Movie:**\n`{title}`\n**Release Date:**\n`{release_date}`"
     if imdb_score:
-        output_ = output_ + f"\n**IMDB: **{imdb_score}"
+        output_ = f"{output_}\n**IMDB: **{imdb_score}"
     if tmdb_score:
-        output_ = output_ + f"\n**TMDB: **{tmdb_score}"
+        output_ = f"{output_}\n**TMDB: **{tmdb_score}"
     output_ = output_ + "\n\n**Available on:**\n"
     for provider, link in stream_providers.items():
         if "sonyliv" in link:

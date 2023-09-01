@@ -392,8 +392,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = sorted(helpable_modules)
     modules = [
         custom.Button.inline(
-            "{} {} {}".format(f"{INLINE_EMOJI}", x, f"{INLINE_EMOJI}"),
-            data="ub_modul_{}".format(x),
+            f"{INLINE_EMOJI} {x} {INLINE_EMOJI}", data=f"ub_modul_{x}"
         )
         for x in helpable_modules
     ]
@@ -409,17 +408,17 @@ def paginate_help(page_number, loaded_modules, prefix):
     modulo_page = page_number % max_num_pages
     if len(pairs) > number_of_rows:
         pairs = pairs[
-            modulo_page * number_of_rows: number_of_rows * (modulo_page + 1)
+            modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
         ] + [
             (
                 custom.Button.inline(
-                    "⪻", data="{}_prev({})".format(prefix, modulo_page)
+                    "⪻", data=f"{prefix}_prev({modulo_page})"
                 ),
                 custom.Button.inline(
-                    "⪼ ʙᴀᴄᴋ ⪻", data="{}_close({})".format(prefix, modulo_page)
+                    "⪼ ʙᴀᴄᴋ ⪻", data=f"{prefix}_close({modulo_page})"
                 ),
                 custom.Button.inline(
-                    "⪼", data="{}_next({})".format(prefix, modulo_page)
+                    "⪼", data=f"{prefix}_next({modulo_page})"
                 ),
             )
         ]
@@ -1060,9 +1059,7 @@ with bot:
                 reply_pop_up_alert = (
                     help_string
                     if help_string is not None
-                    else "{} Tidak ada dokumen yang telah ditulis untuk modul.".format(
-                        modul_name
-                    )
+                    else f"{modul_name} Tidak ada dokumen yang telah ditulis untuk modul."
                 )
                 await event.edit(
                     reply_pop_up_alert, buttons=[

@@ -46,7 +46,7 @@ def getsubitems(obj, itemkey, islast, maxlinelength, indent):
         elif islist or istuple:
             opening, closing, keys = "[", "]", range(len(obj))
         if itemkey != "":
-            opening = itemkey + ": " + opening
+            opening = f"{itemkey}: {opening}"
         if not islast:
             closing += ","
 
@@ -93,10 +93,10 @@ def getsubitems(obj, itemkey, islast, maxlinelength, indent):
                 for (i, item) in enumerate(subitems):
                     item_text = item
                     if i < len(inner) - 1:
-                        item_text = item + ","
+                        item_text = f"{item},"
 
                     if len(current_line) > 0:
-                        try_inline = current_line + " " + item_text
+                        try_inline = f"{current_line} {item_text}"
                     else:
                         try_inline = item_text
 
@@ -124,7 +124,7 @@ def getsubitems(obj, itemkey, islast, maxlinelength, indent):
                 for item in subitems:
                     totallength += len(item)
                 if totallength <= maxlinelength:
-                    str = "".join(item + " " for item in subitems)
+                    str = "".join(f"{item} " for item in subitems)
                     # wrap concatenated content in a new list
                     subitems = [str.strip()]
                 else:
@@ -141,17 +141,13 @@ def getsubitems(obj, itemkey, islast, maxlinelength, indent):
         # if inner tokens are rendered in multiple lines already, then the
         # outer brackets remain in separate lines
         if not is_inline:
-            items.append(opening)  # opening brackets
-            # Append children to parent list as a nested list
-            items.append(subitems)
-            items.append(closing)  # closing brackets
-
+            items.extend((opening, subitems, closing))
     return items, is_inline
 
 
 def basictype2str(obj):
     if isinstance(obj, str):
-        return '"' + str(obj) + '"'
+        return f'"{str(obj)}"'
     if isinstance(obj, bool):
         return {True: "true", False: "false"}[obj]
     return str(obj)
@@ -167,8 +163,5 @@ def indentitems(items, indent, level):
         else:
             islast = i == len(items) - 1
             # no new line character after the last rendered line
-            if level == 0 and islast:
-                res += indentstr + item
-            else:
-                res += indentstr + item + "\n"
+            res += indentstr + item if level == 0 and islast else indentstr + item + "\n"
     return res

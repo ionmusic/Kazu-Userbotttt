@@ -32,14 +32,14 @@ async def filter_incoming_handler(handler):
             for trigger in filters:
                 pattern = r"( |^|[^\w])" + \
                     escape(trigger.keyword) + r"( |$|[^\w])"
-                pro = search(pattern, name, flags=IGNORECASE)
-                if pro and trigger.f_mesg_id:
-                    msg_o = await handler.client.get_messages(
-                        entity=BOTLOG_CHATID, ids=int(trigger.f_mesg_id)
-                    )
-                    await handler.reply(msg_o.message, file=msg_o.media)
-                elif pro and trigger.reply:
-                    await handler.reply(trigger.reply)
+                if pro := search(pattern, name, flags=IGNORECASE):
+                    if trigger.f_mesg_id:
+                        msg_o = await handler.client.get_messages(
+                            entity=BOTLOG_CHATID, ids=int(trigger.f_mesg_id)
+                        )
+                        await handler.reply(msg_o.message, file=msg_o.media)
+                    elif trigger.reply:
+                        await handler.reply(trigger.reply)
     except AttributeError:
         pass
 
@@ -116,10 +116,10 @@ async def kick_marie_filter(event):
     filters = resp.text.split("-")[1:]
     for i in filters:
         if bot_type.lower() == "marie":
-            await event.reply("/stop %s" % (i.strip()))
+            await event.reply(f"/stop {i.strip()}")
         if bot_type.lower() == "rose":
             i = i.replace("`", "")
-            await event.reply("/stop %s" % (i.strip()))
+            await event.reply(f"/stop {i.strip()}")
         await sleep(0.3)
     await event.respond(get_string("flr_12"))
     if BOTLOG_CHATID:
@@ -140,7 +140,7 @@ async def filters_active(event):
     for filt in filters:
         if transact == get_string("flr_6"):
             transact = get_string("flr_2")
-        transact += " ⍟ `{}`\n".format(filt.keyword)
+        transact += f" ⍟ `{filt.keyword}`\n"
     await event.edit(transact)
 
 

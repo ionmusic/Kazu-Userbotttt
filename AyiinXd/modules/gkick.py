@@ -22,7 +22,7 @@ async def gspide(rk):
         rkp = await lazy.edit(get_string("com_1"))
     me = await rk.client.get_me()
     await rkp.edit(get_string("gkick_1"))
-    my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
+    my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await rk.get_chat()
     a = b = 0
     if rk.is_private:

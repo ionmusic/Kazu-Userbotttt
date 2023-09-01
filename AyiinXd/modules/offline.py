@@ -54,7 +54,8 @@ async def set_afk(afk_e):
     if user.last_name:
         await afk_e.client(
             UpdateProfileRequest(
-                first_name=user.first_name, last_name=user.last_name + "【 OFF 】"
+                first_name=user.first_name,
+                last_name=f"{user.last_name}【 OFF 】",
             )
         )
     else:

@@ -87,7 +87,7 @@ async def autopilot():
         except BaseException as er:
             LOGS.exception(er)
     if not str(chat.id).startswith("-100"):
-        heroku_var["BOTLOG_CHATID"] = "-100" + str(chat.id)
+        heroku_var["BOTLOG_CHATID"] = f"-100{str(chat.id)}"
     else:
         heroku_var["BOTLOG_CHATID"] = str(chat.id)
 
@@ -145,7 +145,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"Kazu{(str(who.id))[6:]}{str(ran)}bot"
+        username = f"Kazu{str(who.id)[6:]}{ran}bot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -244,15 +244,15 @@ def load_module(shortname):
         pass
     elif shortname.endswith("_"):
         path = Path(f"AyiinXd/modules/{shortname}.py")
-        name = "AyiinXd.modules.{}".format(shortname)
+        name = f"AyiinXd.modules.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("Successfully imported " + shortname)
+        LOGS.info(f"Successfully imported {shortname}")
     else:
 
         path = Path(f"AyiinXd/modules/{shortname}.py")
-        name = "AyiinXd.modules.{}".format(shortname)
+        name = f"AyiinXd.modules.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -261,8 +261,8 @@ def load_module(shortname):
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["AyiinXd.modules." + shortname] = mod
-        LOGS.info("Successfully imported " + shortname)
+        sys.modules[f"AyiinXd.modules.{shortname}"] = mod
+        LOGS.info(f"Successfully imported {shortname}")
 
 
 def start_assistant(shortname):
@@ -270,21 +270,21 @@ def start_assistant(shortname):
         pass
     elif shortname.endswith("_"):
         path = Path(f"AyiinXd/modules/assistant/{shortname}.py")
-        name = "AyiinXd.modules.assistant.{}".format(shortname)
+        name = f"AyiinXd.modules.assistant.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Starting Your Assistant Bot.")
-        LOGS.info("Assistant Sucessfully imported " + shortname)
+        LOGS.info(f"Assistant Sucessfully imported {shortname}")
     else:
         path = Path(f"AyiinXd/modules/assistant/{shortname}.py")
-        name = "AyiinXd.modules.assistant.{}".format(shortname)
+        name = f"AyiinXd.modules.assistant.{shortname}"
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["AyiinXd.modules.assistant" + shortname] = mod
-        LOGS.info("Assistant Successfully imported" + shortname)
+        sys.modules[f"AyiinXd.modules.assistant{shortname}"] = mod
+        LOGS.info(f"Assistant Successfully imported{shortname}")
 
 
 def remove_plugin(shortname):

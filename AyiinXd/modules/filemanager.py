@@ -34,15 +34,12 @@ async def lst(event):
         )
         return
     if isdir(path):
-        if cat:
-            msg = get_string("file_2").format(path)
-        else:
-            msg = get_string("file_3")
+        msg = get_string("file_2").format(path) if cat else get_string("file_3")
         lists = os.listdir(path)
         files = ""
         folders = ""
         for contents in os_sorted(lists):
-            catpath = path + "/" + contents
+            catpath = f"{path}/{contents}"
             if not isdir(catpath):
                 size = os.stat(catpath).st_size
                 if contents.endswith((".mp3", ".flac", ".wav", ".m4a")):
@@ -74,7 +71,7 @@ async def lst(event):
                 files += f"`{contents}` (__{humanbytes(size)}__)\n"
             else:
                 folders += f"📁 `{contents}`\n"
-        msg = msg + folders + files if files or folders else msg + "__empty path__"
+        msg = msg + folders + files if files or folders else f"{msg}__empty path__"
     else:
         size = os.stat(path).st_size
         msg = "Rincian file yang diberikan:\n\n"
@@ -161,7 +158,7 @@ async def zip_file(event):
     input_str = event.pattern_match.group(1)
     path = input_str
     zip_name = ""
-    if "|" in input_str:
+    if "|" in path:
         path, zip_name = path.split("|")
         path = path.strip()
         zip_name = zip_name.strip()
@@ -172,7 +169,7 @@ async def zip_file(event):
             dir_path = path.split("/")[-1]
             if path.endswith("/"):
                 dir_path = path.split("/")[-2]
-            zip_path = join(TEMP_DOWNLOAD_DIRECTORY, dir_path) + ".zip"
+            zip_path = f"{join(TEMP_DOWNLOAD_DIRECTORY, dir_path)}.zip"
             if zip_name:
                 zip_path = join(TEMP_DOWNLOAD_DIRECTORY, zip_name)
                 if not zip_name.endswith(".zip"):
@@ -188,7 +185,7 @@ async def zip_file(event):
             )
         elif isfile(path):
             file_name = basename(path)
-            zip_path = join(TEMP_DOWNLOAD_DIRECTORY, file_name) + ".zip"
+            zip_path = f"{join(TEMP_DOWNLOAD_DIRECTORY, file_name)}.zip"
             if zip_name:
                 zip_path = join(TEMP_DOWNLOAD_DIRECTORY, zip_name)
                 if not zip_name.endswith(".zip"):

@@ -20,8 +20,7 @@ async def gps(event):
         return await event.edit(get_string("gps_1"))
     xx = await eor(event, get_string("com_1"))
     geolocator = Nominatim(user_agent="Yins")
-    geoloc = geolocator.geocode(input_str)
-    if geoloc:
+    if geoloc := geolocator.geocode(input_str):
         lon = geoloc.longitude
         lat = geoloc.latitude
         await reply_to_id.edit(

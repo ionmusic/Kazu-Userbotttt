@@ -67,9 +67,7 @@ class PasteBin:
         if self._dkey:
             return
         try:
-            async with self.http.post(
-                self.DOGBIN_URL + "documents", data=self.data.encode("utf-8")
-            ) as req:
+            async with self.http.post(f"{self.DOGBIN_URL}documents", data=self.data.encode("utf-8")) as req:
                 if req.status == 200:
                     res = await req.json()
                     self._dkey = res["key"]
@@ -82,9 +80,7 @@ class PasteBin:
         if self._nkey:
             return
         try:
-            async with self.http.post(
-                self.NEKOBIN_URL + "api/documents", json={"content": self.data}
-            ) as req:
+            async with self.http.post(f"{self.NEKOBIN_URL}api/documents", json={"content": self.data}) as req:
                 if req.status == 201:
                     res = await req.json()
                     self._nkey = res["result"]["key"]
@@ -97,9 +93,7 @@ class PasteBin:
         if self._hkey:
             return
         try:
-            async with self.http.post(
-                self.HASTEBIN_URL + "documents", data=self.data.encode("utf-8")
-            ) as req:
+            async with self.http.post(f"{self.HASTEBIN_URL}documents", data=self.data.encode("utf-8")) as req:
                 if req.status == 200:
                     res = await req.json()
                     self._hkey = res["key"]
@@ -130,10 +124,7 @@ class PasteBin:
         if self._skey:
             return
         try:
-            async with self.http.post(
-                self.SPACEBIN_URL + "api/v1/documents",
-                json={"content": self.data, "extension": "txt"},
-            ) as req:
+            async with self.http.post(f"{self.SPACEBIN_URL}api/v1/documents", json={"content": self.data, "extension": "txt"}) as req:
                 if req.status == 201:
                     res = await req.json()
                     self._skey = res["payload"]["id"]
@@ -165,21 +156,17 @@ class PasteBin:
             return self.HASTEBIN_URL + self._hkey
         if self._kkey:
             return self.KATBIN_URL + self._kkey
-        if self._skey:
-            return self.SPACEBIN_URL + self._skey
-        return False
+        return self.SPACEBIN_URL + self._skey if self._skey else False
 
     @property
     def raw_link(self) -> str:
         """Return the view raw link"""
         if self._dkey:
-            return self.DOGBIN_URL + "raw/" + self._dkey
+            return f"{self.DOGBIN_URL}raw/{self._dkey}"
         if self._nkey:
-            return self.NEKOBIN_URL + "raw/" + self._nkey
+            return f"{self.NEKOBIN_URL}raw/{self._nkey}"
         if self._hkey:
-            return self.HASTEBIN_URL + "raw/" + self._hkey
+            return f"{self.HASTEBIN_URL}raw/{self._hkey}"
         if self._kkey:
             return self.KATBIN_URL + self._kkey
-        if self._skey:
-            return self.SPACEBIN_URL + self._skey
-        return False
+        return self.SPACEBIN_URL + self._skey if self._skey else False

@@ -26,7 +26,7 @@ async def notes_active(svd):
     for note in notes:
         if message == get_string("notes_1"):
             message = get_string("notes_3")
-        message += "`#{}`\n".format(note.keyword)
+        message += f"`#{note.keyword}`\n"
     await svd.edit(message)
 
 
@@ -121,10 +121,10 @@ async def kick_marie_notes(kick):
     filters = resp.text.split("-")[1:]
     for i in filters:
         if bot_type == "marie":
-            await kick.reply("/clear %s" % (i.strip()))
+            await kick.reply(f"/clear {i.strip()}")
         if bot_type == "rose":
             i = i.replace("`", "")
-            await kick.reply("/clear %s" % (i.strip()))
+            await kick.reply(f"/clear {i.strip()}")
         await sleep(0.3)
     await kick.respond(get_string("notes_11"))
     if BOTLOG_CHATID:

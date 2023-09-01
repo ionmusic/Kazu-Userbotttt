@@ -51,15 +51,14 @@ async def deepfryer(event):
             raise ValueError
     except ValueError:
         frycount = 1
-    if event.is_reply:
-        reply_message = await event.get_reply_message()
-        data = await check_media(reply_message)
-        if isinstance(data, bool):
-            return await eod(event, get_string("deep_1"))
-    else:
+    if not event.is_reply:
         return await eod(
             event, get_string("deep_2")
         )
+    reply_message = await event.get_reply_message()
+    data = await check_media(reply_message)
+    if isinstance(data, bool):
+        return await eod(event, get_string("deep_1"))
     # download last photo (highres) as byte array
     xx = await eor(event, get_string("com_5"))
     image = io.BytesIO()
