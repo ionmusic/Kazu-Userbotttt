@@ -5,6 +5,7 @@
 #
 """ Userbot module for filter commands """
 
+
 import asyncio
 import os
 import time
@@ -17,7 +18,7 @@ from AyiinXd import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from AyiinXd.ayiin import ayiin_cmd, check_media, eod, eor, progress
 from Stringyins import get_string
 
-Glitched = TEMP_DOWNLOAD_DIRECTORY + "glitch.gif"
+Glitched = f"{TEMP_DOWNLOAD_DIRECTORY}glitch.gif"
 
 
 @ayiin_cmd(pattern="glitch(?: |$)(.*)")
@@ -30,12 +31,11 @@ async def glitch(event):
         return await eod(event, get_string("failed9"))
     await event.client.download_file(reply_message.media)
     await xx.edit(get_string("com_5"))
-    if event.is_reply:
-        data = await check_media(reply_message)
-        if isinstance(data, bool):
-            return await eod(event, get_string("error_5"))
-    else:
+    if not event.is_reply:
         return await xx.edit(get_string("failed3"))
+    data = await check_media(reply_message)
+    if isinstance(data, bool):
+        return await eod(event, get_string("error_5"))
     try:
         value = int(event.pattern_match.group(1))
         if value > 8:

@@ -45,9 +45,7 @@ async def async_searcher(
             return await data.json()
         if re_content:
             return await data.read()
-        if real:
-            return data
-        return await data.text()
+        return data if real else await data.text()
 
 
 _entities = {
@@ -223,5 +221,4 @@ async def animator(media, mainevent, textevent):
         f"ffmpeg -ss 00:00:00 -to 00:00:02.900 -i {Ayiin} -vf scale={w}:{h} -c:v libvpx-vp9 -crf 30 -b:v 560k -maxrate 560k -bufsize 256k -an Video.webm"
     )
     os.remove(Ayiin)
-    vid = "Video.webm"
-    return vid
+    return "Video.webm"

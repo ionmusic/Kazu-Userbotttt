@@ -36,13 +36,7 @@ def get_fbtpm():
 
 
 def add_btpm(keyword, reply, f_mesg_id):
-    to_check = get_btpm(keyword)
-    if not to_check:
-        adder = Fbtpm(keyword, reply, f_mesg_id)
-        SESSION.add(adder)
-        SESSION.commit()
-        return True
-    else:
+    if to_check := get_btpm(keyword):
         rem = SESSION.query(Fbtpm).filter(Fbtpm.btpm == keyword)
         SESSION.delete(rem)
         SESSION.commit()
@@ -50,14 +44,18 @@ def add_btpm(keyword, reply, f_mesg_id):
         SESSION.add(adder)
         SESSION.commit()
         return False
+    else:
+        adder = Fbtpm(keyword, reply, f_mesg_id)
+        SESSION.add(adder)
+        SESSION.commit()
+        return True
 
 
 def remove_btpm(keyword):
-    to_check = get_btpm(keyword)
-    if not to_check:
-        return False
-    else:
+    if to_check := get_btpm(keyword):
         rem = SESSION.query(Fbtpm).filter(Fbtpm.btpm == keyword)
         rem.delete()
         SESSION.commit()
         return True
+    else:
+        return False

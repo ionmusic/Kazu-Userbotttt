@@ -17,8 +17,7 @@ from Stringyins import get_string
 
 @ayiin_cmd(pattern="sosmed(?: |$)(.*)")
 async def insta(event):
-    xxnx = event.pattern_match.group(1)
-    if xxnx:
+    if xxnx := event.pattern_match.group(1):
         link = xxnx
     elif event.is_reply:
         link = await event.get_reply_message()
@@ -88,8 +87,7 @@ async def DeezLoader(event):
 
 @ayiin_cmd(pattern="tiktok(?: |$)(.*)")
 async def _(event):
-    xxnx = event.pattern_match.group(1)
-    if xxnx:
+    if xxnx := event.pattern_match.group(1):
         d_link = xxnx
     elif event.is_reply:
         d_link = await event.get_reply_message()

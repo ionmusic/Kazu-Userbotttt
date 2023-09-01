@@ -98,17 +98,13 @@ async def set_var(var):
     xx = await eor(var, get_string("com_1"))
     variable = var.pattern_match.group(1)
     value = var.pattern_match.group(2)
+    if BOTLOG_CHATID:
+        await var.client.send_message(
+            BOTLOG_CHATID, get_string("heroku_5").format(variable, value)
+        )
     if variable in heroku_var:
-        if BOTLOG_CHATID:
-            await var.client.send_message(
-                BOTLOG_CHATID, get_string("heroku_5").format(variable, value)
-            )
         await eod(var, get_string("heroku_13"))
     else:
-        if BOTLOG_CHATID:
-            await var.client.send_message(
-                BOTLOG_CHATID, get_string("heroku_5").format(variable, value)
-            )
         await xx.edit(get_string("heroku_14"))
     heroku_var[variable] = value
 
@@ -135,7 +131,7 @@ async def dyno_usage(dyno):
         "Authorization": f"Bearer {HEROKU_API_KEY}",
         "Accept": "application/vnd.heroku+json; version=3.account-quotas",
     }
-    path = "/accounts/" + user_id + "/actions/get-quota"
+    path = f"/accounts/{user_id}/actions/get-quota"
     async with aiohttp.ClientSession() as session, session.get(
         heroku_api + path, headers=headers
     ) as r:

@@ -16,8 +16,7 @@ async def corona(event):
     await event.edit(get_string("com_1"))
     country = event.pattern_match.group(1)
     covid = Covid(source="worldometers")
-    country_data = covid.get_status_by_country_name(country)
-    if country_data:
+    if country_data := covid.get_status_by_country_name(country):
         output_text = f"`⚠️Confirmed   : {country_data['confirmed']} (+{country_data['new_cases']})`\n"
         output_text += f"`☢️Active      : {country_data['active']}`\n"
         output_text += f"`🤕Critical    : {country_data['critical']}`\n"
@@ -38,8 +37,7 @@ async def corona(event):
     await event.edit(get_string("com_1"))
     country = "World"
     covid = Covid(source="worldometers")
-    country_data = covid.get_status_by_country_name(country)
-    if country_data:
+    if country_data := covid.get_status_by_country_name(country):
         output_text = f"`⚠️Confirmed   : {country_data['confirmed']} (+{country_data['new_cases']})`\n"
         output_text += f"`☢️Active      : {country_data['active']}`\n"
         output_text += f"`🤕Critical    : {country_data['critical']}`\n"

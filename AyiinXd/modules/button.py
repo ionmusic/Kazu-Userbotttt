@@ -79,7 +79,7 @@ async def _(event):
         return await edit_delete(
             event, "**Teks apa yang harus saya gunakan di pesan button?**"
         )
-    catinput = "Inline buttons " + markdown_note
+    catinput = f"Inline buttons {markdown_note}"
     AyiinUBOT = await tgbot.get_me()
     BOT_USERNAME = AyiinUBOT.username
     results = await event.client.inline_query(BOT_USERNAME, catinput)

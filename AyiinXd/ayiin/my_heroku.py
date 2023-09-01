@@ -62,16 +62,7 @@ def simple_usage():
     TOTAL = humanbytes(total)
     USED = humanbytes(used)
     FREE = humanbytes(free)
-    return "**Tᴏᴛᴀʟ Rᴜᴀɴɢ Dɪsᴋ:** `{}`\n**Tᴇʀᴘᴀᴋᴀɪ:** `{}`\n**Kᴏsᴏɴɢ:** `{}`\n\n**📊 Pᴇɴɢɢᴜɴᴀᴀɴ Dᴀᴛᴀ 📊**\n**Uᴘʟᴏᴀᴅ**: `{}`\n**Dᴏᴡɴʟᴏᴀᴅ**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISK**: `{}%`".format(
-        TOTAL,
-        USED,
-        FREE,
-        upload,
-        down,
-        cpuUsage,
-        memory,
-        disk,
-    )
+    return f"**Tᴏᴛᴀʟ Rᴜᴀɴɢ Dɪsᴋ:** `{TOTAL}`\n**Tᴇʀᴘᴀᴋᴀɪ:** `{USED}`\n**Kᴏsᴏɴɢ:** `{FREE}`\n\n**📊 Pᴇɴɢɢᴜɴᴀᴀɴ Dᴀᴛᴀ 📊**\n**Uᴘʟᴏᴀᴅ**: `{upload}`\n**Dᴏᴡɴʟᴏᴀᴅ**: `{down}`\n\n**CPU**: `{cpuUsage}%`\n**RAM**: `{memory}%`\n**DISK**: `{disk}%`"
 
 
 async def heroku_usage():
@@ -128,37 +119,24 @@ async def heroku_usage():
     TOTAL = humanbytes(total)
     USED = humanbytes(used)
     FREE = humanbytes(free)
-    return True, "**⚙️ Iɴғᴏʀᴍᴀsɪ Dʏɴᴏ ⚙️**:\n\n➠ **Pᴇɴɢɢᴜɴᴀᴀɴ Dʏɴᴏ** `{}`:\n  •  **{}h**  **{}m |** `[{}%]`\n➠ **Sɪsᴀ Kᴜᴏᴛᴀ Dʏɴᴏ Bᴜʟᴀɴ Iɴɪ :**\n  •  **{}h**  **{}m |** `[{}%]`\n\n**Tᴏᴛᴀʟ Rᴜᴀɴɢ Dɪsᴋ:**: `{}`\n**Tᴇʀᴘᴀᴋᴀɪ**: `{}`\n**Kᴏsᴏɴɢ**: `{}`\n\n**📊 Pᴇɴɢɢᴜɴᴀᴀɴ Dᴀᴛᴀ 📊**\n**Uᴘʟᴏᴀᴅ**: `{}`\n**Dᴏᴡɴʟᴏᴀᴅ**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISK**: `{}%`".format(
-        HEROKU_APP_NAME,
-        AppHours,
-        AppMinutes,
-        AppPercentage,
-        hours,
-        minutes,
-        percentage,
-        TOTAL,
-        USED,
-        FREE,
-        upload,
-        down,
-        cpuUsage,
-        memory,
-        disk,
+    return (
+        True,
+        f"**⚙️ Iɴғᴏʀᴍᴀsɪ Dʏɴᴏ ⚙️**:\n\n➠ **Pᴇɴɢɢᴜɴᴀᴀɴ Dʏɴᴏ** `{HEROKU_APP_NAME}`:\n  •  **{AppHours}h**  **{AppMinutes}m |** `[{AppPercentage}%]`\n➠ **Sɪsᴀ Kᴜᴏᴛᴀ Dʏɴᴏ Bᴜʟᴀɴ Iɴɪ :**\n  •  **{hours}h**  **{minutes}m |** `[{percentage}%]`\n\n**Tᴏᴛᴀʟ Rᴜᴀɴɢ Dɪsᴋ:**: `{TOTAL}`\n**Tᴇʀᴘᴀᴋᴀɪ**: `{USED}`\n**Kᴏsᴏɴɢ**: `{FREE}`\n\n**📊 Pᴇɴɢɢᴜɴᴀᴀɴ Dᴀᴛᴀ 📊**\n**Uᴘʟᴏᴀᴅ**: `{upload}`\n**Dᴏᴡɴʟᴏᴀᴅ**: `{down}`\n\n**CPU**: `{cpuUsage}%`\n**RAM**: `{memory}%`\n**DISK**: `{disk}%`",
     )
 
 
 def db_usage():
     adB = AyiinDB()
-    if adB.name == "Redis":
+    if adB.name == "Mongo":
+        total = 512
+    elif adB.name == "Redis":
         total = 30
     elif adB.name == "SQL":
         total = 20
-    elif adB.name == "Mongo":
-        total = 512
     total = total * (2**20)
     used = adB.usage
-    a = humanbytes(used) + "/" + humanbytes(total)
-    b = str(round((used / total) * 100, 2)) + "%"
+    a = f"{humanbytes(used)}/{humanbytes(total)}"
+    b = f"{str(round(used / total * 100, 2))}%"
     return f"**{adB.name}**\n\n**Storage Used**: `{a}`\n**Usage percentage**: **{b}**"
 
 

@@ -38,7 +38,7 @@ def ayiin_cmd(pattern=None, command=None, **args):
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(CMD_HANDLER) == 2:
-                catreg = "^" + CMD_HANDLER
+                catreg = f"^{CMD_HANDLER}"
                 reg = CMD_HANDLER[1]
             elif len(CMD_HANDLER) == 1:
                 catreg = "^\\" + CMD_HANDLER
@@ -84,7 +84,7 @@ def command(**args):
 
     try:
         if pattern is not None and not pattern.startswith("(?i)"):
-            args["pattern"] = "(?i)" + pattern
+            args["pattern"] = f"(?i){pattern}"
     except BaseException:
         pass
 
@@ -141,7 +141,7 @@ def register(**args):
     args.get("own", False)
 
     if pattern is not None and not pattern.startswith("(?i)"):
-        args["pattern"] = "(?i)" + pattern
+        args["pattern"] = f"(?i){pattern}"
 
     if "disable_edited" in args:
         del args["disable_edited"]

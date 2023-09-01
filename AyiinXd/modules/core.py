@@ -72,7 +72,7 @@ async def uninstall(event):
         os.remove(dir_path)
         await xx.edit(get_string("core_5").format(shortname))
     except OSError as e:
-        await xx.edit("**ERROR:** `%s` : %s" % (dir_path, e.strerror))
+        await xx.edit(f"**ERROR:** `{dir_path}` : {e.strerror}")
 
 
 CMD_HELP.update(

@@ -5,7 +5,7 @@ from AyiinXd.ayiin.exceptions import FFmpegReturnCodeError
 
 
 async def convert(file_path: str) -> str:
-    out = path.join("raw_files", path.basename(file_path + ".raw"))
+    out = path.join("raw_files", path.basename(f"{file_path}.raw"))
     if path.isfile(out):
         return out
     proc = await asyncio.create_subprocess_shell(

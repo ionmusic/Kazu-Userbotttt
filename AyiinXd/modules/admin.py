@@ -186,11 +186,7 @@ async def ban(bon):
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
     except BadRequestError:
         return await eor(bon, get_string("no_perm"))
-    if reason:
-        await ayiin.edit(get_string("band_2").format(user.first_name, user.id, str(user.id), reason, me.first_name))
-    else:
-        await ayiin.edit(get_string("band_2").format(user.first_name, user.id, str(user.id), reason, me.first_name)
-                         )
+    await ayiin.edit(get_string("band_2").format(user.first_name, user.id, str(user.id), reason, me.first_name))
 
 
 @ayiin_cmd(pattern="unban(?:\\s|$)([\\s\\S]*)", group_only=True)
@@ -505,12 +501,11 @@ async def _iundlt(event):
     flag = event.pattern_match.group(1)
     if event.pattern_match.group(2) != "":
         lim = int(event.pattern_match.group(2))
-        if lim > 15:
-            lim = int(15)
+        lim = min(lim, 15)
         if lim <= 0:
-            lim = int(1)
+            lim = 1
     else:
-        lim = int(5)
+        lim = 5
     adminlog = await event.client.get_admin_log(
         event.chat_id, limit=lim, edit=False, delete=True
     )

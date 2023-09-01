@@ -30,21 +30,21 @@ async def gbun(event):
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
         replied_user = await event.client(GetFullUserRequest(reply_message.sender_id))
-        firstname = replied_user.user.first_name
-        usname = replied_user.user.username
         idd = reply_message.sender_id
         # make meself invulnerable cuz why not xD
         if idd == DEVS:
             await reply_message.reply(get_string("fake_3")
                                       )
         else:
+            firstname = replied_user.user.first_name
             jnl = get_string("fake_4").format(me.first_name, firstname, idd)
+            usname = replied_user.user.username
             if usname is None:
                 jnl += get_string("fake_9")
             elif usname != "None":
                 jnl += get_string("fake_8").format(usname)
             if len(gbunVar) > 0:
-                gbunm = "`{}`".format(gbunVar)
+                gbunm = f"`{gbunVar}`"
                 gbunr = get_string("fake_5").format(gbunm)
                 jnl += gbunr
             else:

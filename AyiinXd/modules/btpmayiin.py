@@ -147,10 +147,7 @@ async def on_btpm_list(event):
     for lbtpm in all_fbtpm:
         if message == get_string("btpm_4"):
             message = get_string("btpm_5")
-            message += f"**»** `${lbtpm.btpm}`\n"
-        else:
-            message += f"**»** `${lbtpm.btpm}`\n"
-
+        message += f"**»** `${lbtpm.btpm}`\n"
     await event.edit(message)
 
 

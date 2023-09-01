@@ -24,12 +24,12 @@ async def getmusicvideo(cat):
     video_link = ""
     search = cat
     driver = await chrome()
-    driver.get("https://www.youtube.com/results?search_query=" + search)
+    driver.get(f"https://www.youtube.com/results?search_query={search}")
     user_data = driver.find_elements_by_xpath('//*[@id="video-title"]')
     for i in user_data:
         video_link = i.get_attribute("href")
         break
-    command = 'youtube-dl -f "[filesize<50M]" --merge-output-format mp4 ' + video_link
+    command = f'youtube-dl -f "[filesize<50M]" --merge-output-format mp4 {video_link}'
     os.system(command)
 
 
@@ -46,7 +46,7 @@ async def _(event):
     else:
         artist = event.pattern_match.group(2)
         song = event.pattern_match.group(3)
-    track = str(artist) + " - " + str(song)
+    track = f"{str(artist)} - {str(song)}"
     chat = "@WooMaiBot"
     link = f"/netease {track}"
     await event.edit("`Searching...`")
@@ -119,7 +119,7 @@ async def _(event):
     else:
         artist = event.pattern_match.group(2)
         song = event.pattern_match.group(3)
-    track = str(artist) + " - " + str(song)
+    track = f"{str(artist)} - {str(song)}"
     chat = "@SpotifyMusicDownloaderBot"
     await event.edit("```Getting Your Music```")
     try:
@@ -175,15 +175,9 @@ async def _(event):
     try:
         loa = l[0]
         metadata = extractMetadata(createParser(loa))
-        duration = 0
-        width = 0
-        height = 0
-        if metadata.has("duration"):
-            duration = metadata.get("duration").seconds
-        if metadata.has("width"):
-            width = metadata.get("width")
-        if metadata.has("height"):
-            height = metadata.get("height")
+        duration = metadata.get("duration").seconds if metadata.has("duration") else 0
+        width = metadata.get("width") if metadata.has("width") else 0
+        height = metadata.get("height") if metadata.has("height") else 0
         os.system("cp *mp4 thumb.mp4")
         os.system("ffmpeg -i thumb.mp4 -vframes 1 -an -s 480x360 -ss 5 thumb.jpg")
         thumb_image = "thumb.jpg"
